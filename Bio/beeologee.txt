@@ -1,3 +1,44 @@
+-=-=2/1/17=-=-
+Chemical communication
+Hormones (Endocrine glands and Neurosecretory cells)
+	chemical signals
+	usually carried in the blood
+	cause specific changes in target cells
+Hormone signaling
+	reception -> signal transduction -> response
+	
+-=-=2/6/17=-=-
+Chemical structure of hormones
+	Peptides| made of amino acids
+	Amino-acid derived| made of chains of amino acids
+	Steroid| synthesized from cholesterol
+	Prostaglandins| two fatty acid chains attached to a 5-C ring
+	
+-=-=2/7/17=-=-
+Pituitary gland
+	stores things produced by the hypothalamus
+	Posterior| stores hormones from hypothalamus
+		ADH regulates aquaporins (absorption of H2O in kidney)
+		oxytocin = "love hormone", muscle contraction for child birth, feeling of bonding
+		(-) feedback = inhibits production
+		(+) feedback = stimulates production
+	Anterior| makes hormones
+	hypothalamus regulates pituitary
+Glucose homeostasis
+	Pancreas Islet of Langerhans
+		alpha cells = glucagon
+			increase blood glucose
+		beta cells = insulin
+			decrease blood glucose
+	Hormones involved
+		endocrine gland/cells
+		class of chemicals
+		signal(s) that trigger release
+	Target cells/tissues/organs responses
+	Diseases| diabetes (type 1/2)
+Stress response
+	nerve signals from hypothalamus stimulates the adrenal medulla to secrete
+	
 -=-=2/8/17=-=-
 Thyroid imbalance
 	Hyperthyroidism
