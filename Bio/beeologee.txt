@@ -1,0 +1,33 @@
+-=-=2/8/17=-=-
+Thyroid imbalance
+	Hyperthyroidism
+		leads to high BP, loss of weight, overheating, irritability
+		produces Graves' disease
+	Hypothyroidism
+		leads to low blood pressure, overweight, oftehn cold, lethargy
+Thyroid hormones
+	Thyroxine| regulates metabolism and development
+		negative feedback to maintain thyroxine level in the blood
+		not enough iodine = no feedback loop = no thyroid hormones
+Calcium homeostasis
+	Calcitonin (thyroid gland)
+	Parathyroid hormine (PTH)
+	1,25-dihydroxyvitamin D (kidney)
+		stimulates Ca2+ absorption by the small intestines
+	helps in regulating with estrogen
+		low estrogen and calcium = osteoperosis
+		
+-=-=2/10/17=-=-
+Na+ and H2O Balance
+	Atrial Natriuretic -(-)> adrenal cortex -(x)> mineral corticoids -(x)> reaborption of Na+ and H2O
+	Too much blood volume| release atrial natriuretic peptide (ANP)
+		determines how much to urinate
+		inhibits adrenal cortex secretion of aldosterone (mineral corticoids)
+		increases absorbption of Na+ and water (urinate more)
+Prostaglandins
+	autocrine/paracrine
+	regulating smooth muscle
+	respose to stress
+Similarities between organisms
+	ligand structure
+	signal transductions
