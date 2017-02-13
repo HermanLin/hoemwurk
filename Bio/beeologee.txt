@@ -31,3 +31,15 @@ Prostaglandins
 Similarities between organisms
 	ligand structure
 	signal transductions
+
+-=-=2/13/17=-=-
+Plant hormones
+	ethylene| fruit ripening and other aging processes
+	gibberellins| stem elongation, fruit development, seed germinati
+	cytokinins| stimulate cell division
+	auxins
+	abscisic acid
+	florigens| stimulates flowering in response to day length
+		not "discovered"
+	phototropism
+		plants have a tendency to grow towards light
