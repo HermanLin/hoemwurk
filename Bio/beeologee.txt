@@ -84,3 +84,28 @@ Plant hormones
 		not "discovered"
 	phototropism
 		plants have a tendency to grow towards light
+		
+-=-=2/14/17=-=-
+Muscular-Skeletal systems (E-book: ch39)
+	evolutionary convergence reflects different species' adaptations to a similar environment challenge
+		branches show similar forms
+Four types of tissues
+	Epithelial| covers outside of body and lines the organs and cavities within the body
+	Connective| binds and supports other tissues
+	Muscle| long cells called muscle fibers which contract in response to nerve impulsses
+		skeletal
+			bands of muscles (striated)
+			multiple nuclei in one muscle cell
+			sacromere| the muscle contraction unit
+		cardiac
+			striated
+			branching
+			many gap junctions
+		smooth
+	Nervous| senses stimuli and transmits signals throughout the animal
+Skeletal muscle structure
+	actin| thin filament
+	myosin| thick filament
+Sprinter vs marathon runners
+	slow twitch muscles	
+	fast twitch muscles
