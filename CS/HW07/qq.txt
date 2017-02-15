@@ -1,0 +1,76 @@
+HW #07: Xiang’s Troubles
+Due R 2017-02-16, 8:00am, EST.
+Without succumbing to the temptation of an Internet search, explain as clearly as possible, in a plaintext file, 
+how you know whether each case is solvable -- and if so, how many solutions it has.
+2x2
+3x3
+4x4
+5x5
+6x6
+7x7
+8x8
+
+#Herman Lin
+#APCS2 - pd3
+#HW07 -- Xiang’s Troubles
+#2017-02-15
+
+2x2
+|Q| |
+| | |
+Has no solution
+You can only put a single queen in a corner, which makes the rest of the corners
+invalid spots for new queens
+
+3x3
+|Q| | |
+| | |Q|
+| | | |
+Has no solution
+The most efficient way to place mulitple queens is to follow a knight's move, but
+you can only do the knight's move once without being able to capture another queen
+
+4x4
+| |Q| | |
+| | | |Q|
+|Q| | | |
+| | |Q| |
+Has 1 solution
+There is only one configuration you can have (excluding mirror images) when following
+a knight's move for each queen
+
+5x5
+|Q| | | | |
+| | |Q| | |
+| | | | |Q|
+| |Q| | | |
+| | | |Q| |
+Has 1 solution
+There is only one configuration you can have when following a knight's move
+
+6x6
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+
+7x7
+| | |Q| | | | |
+|Q| | | | | | |
+| | | | | |Q| |
+| |Q| | | | | |
+| | | | |Q| | |
+| | | | | | |Q|
+| | | |Q| | | |
+
+8x8
+| | | | | | | |Q|
+| | |Q| | | | | |
+|Q| | | | | | | |
+| | | | | |Q| | |
+| |Q| | | | | | |
+| | | | |Q| | | |
+| | | | | | |Q| |
+| | | |Q| | | | |

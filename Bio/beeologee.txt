@@ -109,3 +109,50 @@ Skeletal muscle structure
 Sprinter vs marathon runners
 	slow twitch muscles	
 	fast twitch muscles
+	
+-=-=2/15/17=-=-
+How do skeletal muscles contract?
+	sliding filament model
+	1) Neuronal signals (acetlcholine) activate, Na+ release generate action potential
+	2) action potential pass through T tubules
+	3) Ca2+ is realeased from sacroplasmic reticulum (?)
+	5) Ca2+ ions trigger the power-stroke by the myosin heads
+		troponin, tropomyosin, ATP. ADP + Pi
+Muscle contraction
+	H zone decreases in size, I band shorten in length
+	T tubules allow action potentials to pass through muscle fibers quickly
+	Troponin binds to calcium -> Tropomyosin twists actin -> myosin binding site revealed
+	-> phosphate binds to myosin ->  muscle contraction
+	
+	1) tropomyosin covers the binding sites so myosin head cannot attach
+	2) when binding sites of actin are exposed, myosin heads attach to binding sites
+	3) myosin head flexes, pulling the thin filament pas the thick filament and shortening the sarcomere
+	4) using ATP, myosin head detaches from the actin, extends, and then attaches to another actin binding site
+Sprinter vs Marathoner
+	slow-twitch fibers
+		a lot of blood supply = more oxygen
+		high concentration of mitochondria and myoglobin
+		used for sustained, low-level activity (darker with NADH stain)
+	fast-twtich fibers
+		thick with a lot of myofibril
+		low concentration of mitochondria
+		used for brief-duration intense activity (lighter with NADH stain)
+Muscles and skeletons privide movement
+	antagonistic muscles move bodies (biceps and triceps)
+	three types of skeletons
+		hydrostatic
+			fluid held in internal compartments as a hydraulic fluid transfers force between opposing muscle sets
+			muscles contract, internal volume remains the same = opposing muscles contract and extend			
+		exoskeleton
+			hardened, segmented outer surfaces to which internal muscles are attacted
+		endoskeleton
+			tendons attach muscles to the bone
+Human skeletal systems
+	bones are connective tissues
+	functions
+		support, protection, movement, mineral storage (Ca and P), blood cell formation (red bone marrow)
+	axial| skull, ribcage, spinal cord
+	appendicular| appendages
+	herniated disc
+		displaced spinal vertebrae
+		membrane breaks, intervertebral discs leak, reduces cushioning between discs
