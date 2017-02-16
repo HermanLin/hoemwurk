@@ -7,46 +7,71 @@
 |Q| |
 | | |
 Found no solution
+This has no solution because 1 queen immediately invalidates the other
+available corners of the 2x2, therefore allowing only 1 queen.
 
 3x3
 |Q| | |
 | | |Q|
 | | | |
 Found no solution
+This has no solution because 1 queen anywhere on the edge of the board
+gives you two options to place queens, but those two options are always
+in range of another queen i.e another queen will be able to capture the
+other queen.
 
 4x4
 | |Q| | |
 | | | |Q|
 |Q| | | |
 | | |Q| |
-Found 1 solution
+Found 2 solutions
+This has only 2 solutions, based off of one fundamental solution. Putting
+a queen in one corner will only allow 2 knight's moves of placements. The
+fourth one from this method will always be a diagonal away from another
+queen. Placing a queen in on the edge (which has two possible spots, 
+creating 2 solutions), however, and following a knight's move allows for 
+one fundamental solution.
 
 5x5
-|Q| | | | |
-| | |Q| | |
-| | | | |Q|
-| |Q| | | |
-| | | |Q| |
-Found 1 solution
+|Q| | | | |		| |Q| | | |		| | |Q| | |	
+| | |Q| | |		| | | | |Q| 	| | | | |Q|	
+| | | | |Q|		| | |Q| | | 	|Q| | | | |	
+| |Q| | | |		|Q| | | | | 	| | | |Q| |	
+| | | |Q| |		| | | |Q| | 	| |Q| | | |	
+Found 10 solutions
+Like the 4x4, each fundamental solution has it's own variations of placements.
+The first one has 4 variations, the second one has 2 variations, and the third
+one has 4 variations, adding up to a total of 10.
 
 6x6
-| | |Q| | | |
-|Q| | | | | |
-| | | | | |Q|
-| |Q| | | | |
-| | | | |Q| |
-| | |Q| | | |
-Found 1 solution
+| | |Q| | | |	| | | |Q| | |
+|Q| | | | | |	| | | | | |Q|
+| | | | | |Q|	|Q| | | | | |
+| |Q| | | | |	| | |Q| | | |
+| | | | |Q| |	| | | | |Q| |
+| | |Q| | | |	| |Q| | | | |
+Found 4 solutions
+First fundamental solution has 2 variations and the second fundamental solution
+has 2 more variations, totaling 4 possible solutions.
 
 7x7
-| | |Q| | | | |
-|Q| | | | | | |
-| | | | | |Q| |
-| |Q| | | | | |
-| | | | |Q| | |
-| | | | | | |Q|
-| | | |Q| | | |
-Found 1 solution
+| | |Q| | | | |		|Q| | | | | | |		| | | | | |Q| |		| | | | |Q| | |
+|Q| | | | | | |		| | | | | | |Q|		| | | |Q| | | |		| | | | | | |Q|
+| | | | | |Q| |		| | | |Q| | | |		| |Q| | | | | |		| |Q| | | | | |
+| |Q| | | | | |		| |Q| | | | | |		| | | | | | |Q|		| | | |Q| | | |
+| | | | |Q| | |		| | | | |Q| | |		| | | | |Q| | |		| | | | | |Q| |
+| | | | | | |Q|		| | |Q| | | | |		| | |Q| | | | |		|Q| | | | | | |
+| | | |Q| | | | 	| | | | | |Q| |		|Q| | | | | | |		| | |Q| | | | |
+
+| | | | | |Q| | 	|Q| | | | | | |		
+| | |Q| | | | | 	| | | | |Q| | |		
+|Q| | | | | | | 	| | | | | | |Q|		
+| | | | | | |Q| 	| |Q| | | | | |		
+| | | |Q| | | | 	| | | |Q| | | |		
+| |Q| | | | | | 	| | | | | |Q| |		
+| | | | |Q| | | 	| | |Q| | | | |		
+Found 40 solutions
 
 =-=-=-=-=-=
 -=-=8x8=-=-
@@ -59,13 +84,22 @@ Found 1 solution
 | | | | |Q| | | |	| |Q| | | | | | |	| | | | |Q| | | |	|Q| | | | | | | |
 | | | | | | |Q| |	| | | | |Q| | | |	| | |Q| | | | | |	| | | |Q| | | | |
 | | | |Q| | | | |	| | |Q| | | | | |	| | | | | |Q| | |	| | | | | | |Q| |
-	Hammer				Box					Boat				Zed
 	
-| | | | | | | | | 	| | | | | | | | |
-| | | | | | | | |	| | | | | | | | |
-| | | | | | | | |	| | | | | | | | |
-| | | | | | | | |	| | | | | | | | |
-| | | | | | | | |	| | | | | | | | |
-| | | | | | | | |	| | | | | | | | |
-| | | | | | | | |	| | | | | | | | |
-Found 4 solutions
+| | | |Q| | | | | 	| | | | | | |Q| |	| | | | | |Q| | |	| |Q| | | | | | |
+| | | | | | |Q| |	| |Q| | | | | | |	| | |Q| | | | | |	| | | |Q| | | | |
+|Q| | | | | | | |	| | | | | |Q| | |	|Q| | | | | | | |	| | | | | |Q| | |
+| | |Q| | | | | |	| | |Q| | | | | |	| | | | | | | |Q|	| | | | | | | |Q|
+| | | | | | | |Q|	|Q| | | | | | | |	| | | |Q| | | | |	| | |Q| | | | | |
+| | | | | |Q| | |	| | | |Q| | | | |	| |Q| | | | | | |	|Q| | | | | | | |
+| |Q| | | | | | |	| | | | | | | |Q|	| | | | | | |Q| |	| | | | | | |Q| |
+| | | | |Q| | | |	| | | | |Q| | | |	| | | | |Q| | | |	| | | | |Q| | | |
+
+| | | | | |Q| | |	| | |Q| | | | | |	| | | |Q| | | | |	| |Q| | | | |Q| |
+| | |Q| | | | | |	| | | | | |Q| | |	| | | | | | | |Q|	| | | | | | | | |
+|Q| | | | | | | |	| |Q| | | | | | |	|Q| | | | | | | |	| | | | | |Q| | |
+| | | | | | |Q| |	| | | | | | |Q| |	| | |Q| | | | | |	| | |Q| | | | | |
+| | | | |Q| | | |	|Q| | | | | | | |	| | | | | |Q| | |	|Q| | | | | | | |
+| | | | | | | |Q|	| | | |Q| | | | |	| |Q| | | | | | |	| | | |Q| | | | |
+| |Q| | | | | | |	| | | | | | | |Q|	| | | | | | |Q| |	| | | | | | | |Q|
+| | | |Q| | | | |	| | | | |Q| | | |	| | | | |Q| | | |	| | | | |Q| | | |
+Found 92 solutions
