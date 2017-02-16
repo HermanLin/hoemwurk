@@ -78,12 +78,14 @@ Plant hormones
 	ethylene| fruit ripening and other aging processes
 	gibberellins| stem elongation, fruit development, seed germinati
 	cytokinins| stimulate cell division
-	auxins
-	abscisic acid
+	auxins| stem elongation
+	abscisic acid| inhibits cell growth, helps prevent water loss (closes stomata), promotes seed and bud dormancy
 	florigens| stimulates flowering in response to day length
 		not "discovered"
 	phototropism
 		plants have a tendency to grow towards light
+	gravitropism
+		growth in response to gravity| shoots grow up, roots grow down
 		
 -=-=2/14/17=-=-
 Muscular-Skeletal systems (E-book: ch39)
