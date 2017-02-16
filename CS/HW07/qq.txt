@@ -7,12 +7,18 @@
 |Q| |
 | | |
 Found no solution
+This has no solution because 1 queen immediately invalidates the other
+available corners of the 2x2, therefore allowing only 1 queen
 
 3x3
 |Q| | |
 | | |Q|
 | | | |
 Found no solution
+This has no solution because 1 queen anywhere on the edge of the board
+gives you two options to place queens, but those two options are always
+in range of another queen i.e another queen will be able to capture the
+other one
 
 4x4
 | |Q| | |
@@ -22,20 +28,21 @@ Found no solution
 Found 1 solution
 
 5x5
-|Q| | | | |
-| | |Q| | |
-| | | | |Q|
-| |Q| | | |
-| | | |Q| |
-Found 1 solution
+|Q| | | | |		| |Q| | | | 
+| | |Q| | |		| | | | |Q| 
+| | | | |Q|		| | |Q| | | 
+| |Q| | | |		|Q| | | | | 
+| | | |Q| |		| | | |Q| | 
+   Dipper	  	  Pinwheel
+Found 2 solution
 
 6x6
-| | |Q| | | |
-|Q| | | | | |
-| | | | | |Q|
-| |Q| | | | |
-| | | | |Q| |
-| | |Q| | | |
+| | |Q| | | |	| | | | | | |
+|Q| | | | | |	| | | | | | |
+| | | | | |Q|	| | | | | | |
+| |Q| | | | |	| | | | | | |
+| | | | |Q| |	| | | | | | |
+| | |Q| | | |	| | | | | | |
 Found 1 solution
 
 7x7
