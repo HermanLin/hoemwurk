@@ -1,3 +1,9 @@
+/*Herman Lin
+  APCS2 - pd3
+  HW08 -- [Freddie Mercury, Brian May, Roger Taylor, John Deacon] x n
+  2017-02-24*/
+
+
 /***
  * class QueenBoard
  * Generates solutions for N-Queens problem.
@@ -16,7 +22,7 @@ public class QueenBoard
     //constructor allows for specifying size
     public QueenBoard( int size ) 
     {
-		_board = new int[size][size];
+	_board = new int[size][size];
     }
 
 
@@ -32,12 +38,12 @@ public class QueenBoard
      */
     public boolean solve()
     {
-		if (solveH(0)) {
-			//System.out.println(this);
-			return true;
-		}
-		//System.out.println("no solution");
-		return false;
+	if (solveH(0)) {
+	    //System.out.println(this);
+	    return true;
+	}
+	//System.out.println("no solution");
+	return false;
     }
 
     /**
@@ -45,18 +51,18 @@ public class QueenBoard
      */
     private boolean solveH( int col ) 
     {
-		if (col == _board.length)
-			return true;
-		for(int row = 0; row < _board.length; row ++) {
-			//System.out.println("Trying " + row + " " + col);
-			if (_board[row][col] == 0) {
-				addQueen(row, col);
-				if(solveH(col + 1))
-					return true;
-			}
-			removeQueen(row, col);
-		}
-		return false;
+	if (col == _board.length)
+	    return true;
+	for(int row = 0; row < _board.length; row ++) {
+	    //System.out.println("Trying " + row + " " + col);
+	    if (_board[row][col] == 0) {
+		addQueen(row, col);
+		if(solveH(col + 1))
+		    return true;
+	    }
+	    removeQueen(row, col);
+	}
+	return false;
     }
 
 
@@ -68,25 +74,25 @@ public class QueenBoard
 	    all negs and 0's replaced with underscore
 	    all 1's replaced with 'Q'
 	*/
-		if (solve()) {
-			for (int x = 0; x < _board.length; x ++) {
-				for (int y = 0; y < _board.length; y ++) {
-					if (_board[x][y] == 1)
-						System.out.print("Q ");
-					else
-						System.out.print("_ ");
-				}
-				System.out.println();
-			}
+	if (solve()) {
+	    for (int x = 0; x < _board.length; x ++) {
+		for (int y = 0; y < _board.length; y ++) {
+		    if (_board[x][y] == 1)
+			System.out.print("Q ");
+		    else
+			System.out.print("_ ");
 		}
-		else if(!solve()) {
-			for (int x = 0; x < _board.length; x ++) {
-				for (int y = 0; y < _board.length; y ++) {
-					System.out.print("0 ");
-				}
-				System.out.println();
-			}
+		System.out.println();
+	    }
+	}
+	else if(!solve()) {
+	    for (int x = 0; x < _board.length; x ++) {
+		for (int y = 0; y < _board.length; y ++) {
+		    System.out.print("0 ");
 		}
+		System.out.println();
+	    }
+	}
     }
 
 
@@ -195,13 +201,13 @@ public class QueenBoard
 	
 	//QueenBoard i = new QueenBoard(20);
 	/*
-    System.out.println(b);
-	b.addQueen(3,0);
-	b.addQueen(0,1);
-    System.out.println(b);
-	b.removeQueen(3,0);
-    System.out.println(b);
-		*/
+	  System.out.println(b);
+	  b.addQueen(3,0);
+	  b.addQueen(0,1);
+	  System.out.println(b);
+	  b.removeQueen(3,0);
+	  System.out.println(b);
+	*/
 	System.out.println();
 	System.out.println("1x1 Board");
 	a.printSolution();
