@@ -1,0 +1,22 @@
+#Herman Lin
+#APCS2 - pd3
+#HW09 -- Get On the Bus
+#2017-02-27
+
+-=-=Knight's Tour=-=-
+Goal: 
+Touch every square on an nxn board exactly once
+or to determine that this task is possible
+
+Steps:
+1) Place the knight on the first valid position
+2) Move to the first possible position (an L-shape from the original spot)
+3) Repeat Step 2 until there are no more possible moves
+4) If the number of moves made is not equal to n^2, backtrack to a new position
+
+Solution: 
+When the number of moves made is equal to n^2 and a closed trip is possible
+
+Things to consider:
+- What is considered as the "first possible position" when moving the knight
+- Difference between an open and closed trip
