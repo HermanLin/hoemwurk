@@ -167,3 +167,26 @@ Bones are complex living organs
 	bone cells
 		live in a matrix of flexible protein fibers and hard calcium calts
 		kept alive by bloodvessels, hormones and nerves
+		
+-=-=2/27/17=-=-
+TEST_ONE_REVIEW
+Model l| relay proteins relay and magnify the signal
+Model 2| phosphorylation phosphate
+Model 3} secondary messenger (cEMP, calcium, etc.)
+Renin -> angio___ -> adrenal cortex -> aldosterone -> increase absoprtion of water and sodium
+When calcium levels are high = calcitonin (thyroid gland) -> inhibit release of calcium/increase absorption of calcium
+When calcium levels are low = 
+
+QUIZE_THREE (Matching/Fill-in-the-Blank)
+- Can you give me one type of tissue? What kinds of bones? Connective structures
+
+TEST_TWO_CONTENT
+- Skeletal and Muscles
+
+Bone growth and remodeling
+	Osteon| the "ring" structure
+	Osteocyte| the living cell forming osteon
+	Osteoblast| continue to build bone tissue
+	Osteoclast| breaking down bond tissue (by acidic environments and enzymes = dissolve the mineral deposits Ca2+ + PO4-)
+Ligaments| dense connective tissue, attaches bone to bone
+Tendons| cords of dense connective tissue, attaches muscles to bones
