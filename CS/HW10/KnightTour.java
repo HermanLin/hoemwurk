@@ -1,12 +1,18 @@
+/*Herman Lin
+APCS2 - pd3
+HW10 -- We On Award Tour
+2017-02-28*/
+
 /*======================================
   class KnightTour
   Animates a Knight's Tour of a square chess board.
 
   Mean execution times for boards of size n*n:
-  n=5   __s    over __ executions 
-  n=6   __s    over __ executions
-  n=7   __s    over __ executions
-  n=8   __s    over __ executions
+  (run three times each)
+  n=5   1.040s     over   8840 executions 
+  n=6   28.984s    over   248169 executions
+  n=7   1064.358s  over   7151179 executions
+  n=8   1387.212s  over   82507332 executions
   ======================================*/
 
 /***
@@ -32,6 +38,7 @@ class TourFinder
     private int[][] board;
     private int sideLength; //board has dimensions n x n
     private boolean solved = false;
+    public int executions = 0;
 
     //constructor
     public TourFinder( int n ) {
@@ -84,7 +91,9 @@ class TourFinder
 	}
     }
 
-
+    public int getExecutions() {
+	return executions;
+    }
     /*********************************************
      * void findTour(int x,int y,int moves) -- use depth-first w/ backtracking algo 
      * to find valid knight's tour
@@ -97,21 +106,29 @@ class TourFinder
 	//delay(50); //slow it down enough to be followable
 
 	//if a tour has been completed, stop animation
-	if ( solved ) System.exit(0);
+	if ( solved ) {
+	    System.out.println(this);
+	    //System.out.println("# of Executions: " + getExecutions()); 
+	    return; //used instead of latter code so that code after finding a valid path is run
+	    //System.exit(0);
+	}
 
 	//primary base case: tour completed
-	if ( /* YOUR KODE HERE */ ) {
-	    /* YOUR KODE HERE */
+	if ( moves > ( sideLength * sideLength ) ) {
+	    solved = true;
 	}
 	//other base case: stepped off board or onto visited cell
-	if ( /* YOUR KODE HERE */ ) {
-	    /* YOUR KODE HERE */
+	if ( board[x][y] != 0 ) {
+	    //empty body because you don't want to do anything to invalid positions
+	    //you only want to continue on checking other valid squares
 	}
 	//otherwise, mark current location
 	//and recursively generate tour possibilities from current pos
 	else {
 
-	    /* YOUR KODE HERE */
+	    board[x][y] = moves;
+	    //everytime you move the knight to a valid position, add 1 to num of executions
+	    executions++;
 
 	    //delay(1000); //uncomment to slow down enough to view
 
@@ -125,11 +142,18 @@ class TourFinder
 	      . h . a .
 	      ======================================*/
 
-	    /* YOUR KODE HERE */
+	    findTour(x + 1, y + 2, moves + 1);
+	    findTour(x + 2, y + 1, moves + 1);
+	    findTour(x + 2, y - 1, moves + 1);
+	    findTour(x + 1, y - 2, moves + 1);
+	    findTour(x - 1, y - 2, moves + 1);
+	    findTour(x - 2, y - 1, moves + 1);
+	    findTour(x - 2, y + 1, moves + 1);
+	    findTour(x - 1, y + 2, moves + 1);
 
 	    //If made it this far, path did not lead to tour, so back up.
 
-	    /* YOUR KODE HERE */
+	    board[x][y] = 0;
 
 	    System.out.println( this ); //refresh screen
 	}
@@ -143,7 +167,8 @@ public class KnightTour
     public static void main( String[] args ) {
 
 	int n = 8;
-
+	double timeInit, timeEnd;
+	
 	try { 
 	    n = Integer.parseInt( args[0] );
 	}catch( Exception e ) { 
@@ -165,7 +190,13 @@ public class KnightTour
 	//tf.findTour( startX, startY, 1 );   // 1 or 0 ?
 
 	//for fixed starting location, use line below:
+	//used milliseconds to find the runtime
+	timeInit = System.currentTimeMillis();
 	tf.findTour( 2, 2, 1 );
+	timeEnd = System.currentTimeMillis();
+	
+	System.out.println("# of Executions: " + tf.getExecutions());
+	System.out.println("Time Taken: " + (timeEnd - timeInit)/1000 + " seconds");
 
     }//end main()
 
