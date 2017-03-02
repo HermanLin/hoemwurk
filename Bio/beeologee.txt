@@ -182,6 +182,7 @@ QUIZE_THREE (Matching/Fill-in-the-Blank)
 
 TEST_TWO_CONTENT
 - Skeletal and Muscles
+- Question 91 from Review Sheet
 
 Bone growth and remodeling
 	Osteon| the "ring" structure
@@ -209,4 +210,22 @@ Cell cycle and asexual reproduction (Chapter 9, 11)
 		what will happen when cell division goes wrong?
 			cancer, mutations
 		why should you care about studying  cell division?
-			
+
+-=-=3/2/17=-=-
+Result of cell division
+	two daughter cells are produced
+	each daughter cell recieves complete set of hereditary info from parent cell and half of cytoplasm
+	the hereditary info in daughter cells is usually identical to parent
+Types of asexual reproduction
+	binary fission| "dividing in half", prokaryotes only
+		circular DNA 
+	cell division| paramecium
+	budding| yeasts (b), hydra
+	clones| vegetative clones
+	regeneration| planarians
+Eukaryotes chromosomes are more complex
+	eukaryotic chormosomes are composed of chromatin (DNA + histone proteins)
+		to prepare for division, chromatin becomes highly compact to form chromosomes
+		early in division process, chromosomes duplicate
+			each chromosome appears as two sister chromatids, containing identical DNA molecules
+			the chromatids are joined at the centromere, a narrow region
