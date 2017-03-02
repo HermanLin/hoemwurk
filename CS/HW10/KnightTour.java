@@ -109,8 +109,8 @@ class TourFinder
 	if ( solved ) {
 	    System.out.println(this);
 	    //System.out.println("# of Executions: " + getExecutions()); 
-	    return; //used instead of latter code so that code after finding a valid path is run
-	    //System.exit(0);
+	    //return; //used instead of latter code so that code after finding a valid path is run
+	    System.exit(0);
 	}
 
 	//primary base case: tour completed
@@ -155,7 +155,7 @@ class TourFinder
 
 	    board[x][y] = 0;
 
-	    System.out.println( this ); //refresh screen
+	    //System.out.println( this ); //refresh screen
 	}
     }//end findTour()
 
@@ -187,13 +187,15 @@ public class KnightTour
 	//for random starting location, use lines below:
 	//int startX = 2 + (int)( n * Math.random() );
 	//int startY = 2 + (int)( n * Math.random() );
+	timeInit = System.currentTimeMillis();
 	//tf.findTour( startX, startY, 1 );   // 1 or 0 ?
+	timeEnd = System.currentTimeMillis();
 
 	//for fixed starting location, use line below:
 	//used milliseconds to find the runtime
-	timeInit = System.currentTimeMillis();
-	tf.findTour( 2, 2, 1 );
-	timeEnd = System.currentTimeMillis();
+
+	tf.findTour( 2, 5, 1 );
+
 	
 	System.out.println("# of Executions: " + tf.getExecutions());
 	System.out.println("Time Taken: " + (timeEnd - timeInit)/1000 + " seconds");

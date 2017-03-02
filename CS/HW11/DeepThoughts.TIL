@@ -4,3 +4,43 @@
 #2017-03-01
 
 Section Uno
+Q1:	From any starting position, an open tour cannot always be found because if you start from
+	squares with a higher number of possible moves, you tend to visit the center squares early,
+	resulting in the knight being stranded on the sides of the board later in the tour. You can
+	see this in a 4x4 board where it is clear to see that the center squares are needed in order
+	to exit the corners, and each corner needs two squares in order to make a possible solution.
+	The fact that there are 4 corners means that there needs to be at least 8 "center" squares
+	for a knight in the corners to exit that corner.
+Q2:	From any starting position, a closed tour basically applies the same concept of the fact that
+	you can't always find a solution if you start anywhere on the board. A closed tour requires 
+	for you to start from a position and return to that position to complete the solution. Although
+	it seems possible considering that every square in a n >= 5 sized board has 2 or more possible
+	moves to them, you must be able to keep at least one of those squares absolutely clear of any
+	other possible moves that can be made to that square from a different position on the board.
+	This limits the number of moves possible greatly and in turn doesn't always produce a closed
+	tour.
+Q3: Essentially, every time you add a row and column to a board (e.g 5x5 to a 6x6), you are
+	adding more possible moves that the method needs to check against in order to produce a valid
+	solution. Also, the method hardcoded the possible moves needed to be checked. This could lead
+	to unnecessary checks as it could be possible that the correct move would be to move to square
+	'h' but you're checking for possible solutions in squares 'a' to 'g' first, increasing the
+	execution time.
+	
+	*Number in each square represents number of moves possible
+	|2|3|4|3|2|			|2|3|4|4|3|2|
+	|3|4|6|4|3|			|3|4|6|6|4|3|
+	|4|6|8|6|4|	======>	|4|6|8|8|6|4|
+	|3|4|6|4|3|			|4|6|8|8|6|4|
+	|2|3|4|3|2|			|3|4|6|6|4|3|
+						|2|3|4|4|3|2|
+Q4:	As explained for Q3, a possible optimization for this method would be a way to skip uncessary 
+	checks, or more simply put, a way to not hard code the possible moves that are to be checked.
+	If such is possible, it would greatly reduce the execution time and in turn, improve the method.
+
+Section Deux
+1) 	Start from the starting position
+2) 	Check to see if there are any possible moves (includes turns)
+3) 	If you can move to a spot, and place a marker as you move
+4) 	If you can't move to a spot, backtrack to an intersection and "block" the path you already took 
+	and continue on a different path
+5) 	Repeat steps 2 to 4 until solved
