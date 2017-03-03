@@ -120,8 +120,11 @@ class MazeSolver
 	if ( solved ) {
 	    System.out.println(this);
 	    System.exit(0);
-	}
+	} 
 	//other base case(s)...
+	else if ( x < 0 || x > h || y < 0 || y > w ) {
+	    return;
+	}
 	else if ( maze[x][y] == EXIT ) {
 	    solved = true;
 	    return;
@@ -130,8 +133,6 @@ class MazeSolver
 	    //maze[x][y] = HERO;
 	    return;
 	}
-	//else if ( maze[x][y] == WALL ) {
-	//}
 	//recursive reduction
 	else {
 	    maze[x][y] = HERO;
@@ -139,15 +140,15 @@ class MazeSolver
 	    System.out.println(this);
 	    //maze[x][y] = PATH;
 	    solve(x, y + 1); //up
-	    System.out.println("Recursing...");
+	    //System.out.println("Recursing...");
 	    solve(x, y - 1); //down
-	    System.out.println("Recursing...");	    
+	    //System.out.println("Recursing...");	    
 	    solve(x - 1, y); //left
-	    System.out.println("Recursing...");
+	    //System.out.println("Recursing...");
 	    solve(x + 1, y); //right
-	    System.out.println("Recursing...");
+	    //System.out.println("Recursing...");
 	    
-	    if ( !solved ) maze[x][y] = PATH;
+	    maze[x][y] = VISITED_PATH;
 
 	    System.out.println(this);
 	}
