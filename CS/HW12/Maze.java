@@ -9,7 +9,12 @@
  * (mazefile is ASCII representation of maze, using symbols below)
  * 
  * ALGORITHM for finding exit from starting position:
- *  <INSERT YOUR SUMMARY OF ALGO HERE>
+ *  1) 	Start from the starting position
+ *  2) 	Check to see if there are any possible moves (includes turns)
+ *  3) 	If you can move to a spot, and place a marker as you move
+ *  4) 	If you can't move to a spot, backtrack to an intersection and "block" the path you already took 
+ *      and continue on a different path
+ *  5) 	Repeat steps 2 to 4 until solved
  ***/
 
 //enable file I/O
@@ -76,7 +81,8 @@ class MazeSolver
     public String toString() 
     {
 	//send ANSI code "ESC[0;0H" to place cursor in upper left
-	String retStr = "[0;0H";  
+	//String retStr = "[0;0H";  
+	String retStr = "";
 	//emacs shortcut: C-q, then press ESC
 	//emacs shortcut: M-x quoted-insert, then press ESC
 
@@ -109,24 +115,28 @@ class MazeSolver
     public void solve( int x, int y ) {
 
 	delay(50); //slow it down enough to be followable
-
+	System.out.println(this);
 	//primary base case
-	if ( /* YOUR AMAZEING CODE HERE */ ) {
-	    /* YOUR AMAZEING CODE HERE */
+	if ( solved ) {
+	    System.exit(0);
 	}
 	//other base case(s)...
-	else if ( /* YOUR AMAZEING CODE HERE */ ) {
-	    /* YOUR AMAZEING CODE HERE */
+	else if ( maze[x][y] == EXIT ) {
+	    solved = true;
 	}
-	else if ( /* YOUR AMAZEING CODE HERE */ ) {
-	    /* YOUR AMAZEING CODE HERE */
+	else if ( maze[x][y] == PATH ) {
+	    maze[x][y] = HERO;
 	}
-	else if ( /* YOUR AMAZEING CODE HERE */ ) {
-	    /* YOUR AMAZEING CODE HERE */
+	else if ( maze[x][y] == WALL ) {
 	}
 	//recursive reduction
 	else {
-	    /* YOUR AMAZEING CODE HERE */
+	    solve(x, y + 1); //up
+	    solve(x + 1, y); //right
+	    solve(x, y - 1); //down
+	    solve(x - 1, y); //left
+
+	    maze[x][y] = PATH;
 	}
     }
 
@@ -152,9 +162,9 @@ public class Maze
 
 	    //drop hero into the maze (coords must be on path)
 	    //comment next line out when ready to randomize startpos
-	    ms.solve( 4, 3 ); 
+	    ms.solve( 1, 1 ); 
 
-	    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 	    //drop our hero into maze at random location on path
 	    //the Tim Diep way:
 	    Random r = new Random();
@@ -166,6 +176,7 @@ public class Maze
 	    }
 
 	    ms.solve( startX, startY );
+	    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	} catch( Exception e ) { 
 	    System.out.println( "Error reading input file." );
