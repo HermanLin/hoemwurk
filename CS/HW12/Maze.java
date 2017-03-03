@@ -115,28 +115,41 @@ class MazeSolver
     public void solve( int x, int y ) {
 
 	delay(50); //slow it down enough to be followable
-	System.out.println(this);
+
 	//primary base case
 	if ( solved ) {
+	    System.out.println(this);
 	    System.exit(0);
 	}
 	//other base case(s)...
 	else if ( maze[x][y] == EXIT ) {
 	    solved = true;
+	    return;
 	}
-	else if ( maze[x][y] == PATH ) {
-	    maze[x][y] = HERO;
+	else if ( !onPath(x, y) ) {
+	    //maze[x][y] = HERO;
+	    return;
 	}
-	else if ( maze[x][y] == WALL ) {
-	}
+	//else if ( maze[x][y] == WALL ) {
+	//}
 	//recursive reduction
 	else {
+	    maze[x][y] = HERO;
+	    
+	    System.out.println(this);
+	    //maze[x][y] = PATH;
 	    solve(x, y + 1); //up
-	    solve(x + 1, y); //right
+	    System.out.println("Recursing...");
 	    solve(x, y - 1); //down
+	    System.out.println("Recursing...");	    
 	    solve(x - 1, y); //left
+	    System.out.println("Recursing...");
+	    solve(x + 1, y); //right
+	    System.out.println("Recursing...");
+	    
+	    if ( !solved ) maze[x][y] = PATH;
 
-	    maze[x][y] = PATH;
+	    System.out.println(this);
 	}
     }
 
@@ -162,7 +175,7 @@ public class Maze
 
 	    //drop hero into the maze (coords must be on path)
 	    //comment next line out when ready to randomize startpos
-	    ms.solve( 1, 1 ); 
+	    //ms.solve( 3, 4 ); 
 
 
 	    //drop our hero into maze at random location on path
@@ -171,8 +184,11 @@ public class Maze
 	    int startX = r.nextInt( 80 );
 	    int startY = r.nextInt( 25 );
 	    while ( !ms.onPath(startX,startY) ) {
+		//System.out.println("Checking for valid pos...");
 		startX = r.nextInt( 80 );
 		startY = r.nextInt( 25 );
+		//System.out.println("X: " + startX);
+		//System.out.println("Y: " + startY);
 	    }
 
 	    ms.solve( startX, startY );
