@@ -229,3 +229,23 @@ Eukaryotes chromosomes are more complex
 		early in division process, chromosomes duplicate
 			each chromosome appears as two sister chromatids, containing identical DNA molecules
 			the chromatids are joined at the centromere, a narrow region
+			
+-=-=3/3/17=-=-
+Cell cycle worksheet
+11) DNA needs to be replicated so the two daughter cells would be genetically identical to the parent cell
+14) Division of sister chromatids
+19) Human spinal cord
+20) Most of the brain cells are at the G0 stage
+	G0| cell arrested, doesn't continue cell cycle
+	
+Formation of sister chromatids
+Eukaryotic chromosomes
+	homologous chromosomes| eukaryotic chromosomes that contain the same genes
+	diploid| cells with pairs of homologous chromosomes
+	typical human has 23 pairs of chomosomes, 23rd pair are sex chromosomes
+Homologous chromosomes
+	usually don't have identical nucleotide sequence (mutations)
+	they can have the different alleles (genes)
+Mitotic phase cell division
+	mitosis | division of nucleus
+	cytokineseis| division of cell
