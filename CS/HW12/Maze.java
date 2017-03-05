@@ -1,3 +1,9 @@
+/*Herman Lin
+APCS2 - pd3
+HW12 -- Thinkers of the Corn
+2017-03-05*/
+
+
 /***
  * SKEELTON for class 
  * MazeSolver
@@ -9,12 +15,12 @@
  * (mazefile is ASCII representation of maze, using symbols below)
  * 
  * ALGORITHM for finding exit from starting position:
- *  1) 	Start from the starting position
- *  2) 	Check to see if there are any possible moves (includes turns)
- *  3) 	If you can move to a spot, and place a marker as you move
- *  4) 	If you can't move to a spot, backtrack to an intersection and "block" the path you already took 
- *      and continue on a different path
- *  5) 	Repeat steps 2 to 4 until solved
+ * 1) Choose a starting position (manually or automatically) on the maze path
+ * 2) Check if you can move to the goal
+ * 3) Check for a valid path to move on (including turns)
+ * 4) If there is a valid path, move to that path
+ * 5) If there is no valid path to move, backtrack to an intersection
+ * 6) Repeat from step 2 until solved
  ***/
 
 //enable file I/O
