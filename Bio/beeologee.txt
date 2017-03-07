@@ -182,6 +182,7 @@ QUIZE_THREE (Matching/Fill-in-the-Blank)
 
 TEST_TWO_CONTENT
 - Skeletal and Muscles
+- Question 91 from Review Sheet
 
 Bone growth and remodeling
 	Osteon| the "ring" structure
@@ -190,3 +191,61 @@ Bone growth and remodeling
 	Osteoclast| breaking down bond tissue (by acidic environments and enzymes = dissolve the mineral deposits Ca2+ + PO4-)
 Ligaments| dense connective tissue, attaches bone to bone
 Tendons| cords of dense connective tissue, attaches muscles to bones
+
+-=-=3/1/17=-=-
+What comes to mind?
+Assexual reproduction| a method of reproducing where there is only one parent and the offspring is a copy of the parent with possible mutations
+
+Cell cycle and asexual reproduction (Chapter 9, 11)
+	types of asexual reproduction|
+	DNA replication
+	
+	cells arise from pre-existing cells	
+		when does cell division happen?
+			reproduction of an entire unicellular organism
+			growth of a fertilized egg into an adult in a multi-cellular organism
+			repair and replacement of cells in an adult
+			when the cell becomes too big
+		why is it important for maintaining life?
+		what will happen when cell division goes wrong?
+			cancer, mutations
+		why should you care about studying  cell division?
+
+-=-=3/2/17=-=-
+Result of cell division
+	two daughter cells are produced
+	each daughter cell recieves complete set of hereditary info from parent cell and half of cytoplasm
+	the hereditary info in daughter cells is usually identical to parent
+Types of asexual reproduction
+	binary fission| "dividing in half", prokaryotes only
+		circular DNA 
+	cell division| paramecium
+	budding| yeasts (b), hydra
+	clones| vegetative clones
+	regeneration| planarians
+Eukaryotes chromosomes are more complex
+	eukaryotic chormosomes are composed of chromatin (DNA + histone proteins)
+		to prepare for division, chromatin becomes highly compact to form chromosomes
+		early in division process, chromosomes duplicate
+			each chromosome appears as two sister chromatids, containing identical DNA molecules
+			the chromatids are joined at the centromere, a narrow region
+			
+-=-=3/3/17=-=-
+Cell cycle worksheet
+11) DNA needs to be replicated so the two daughter cells would be genetically identical to the parent cell
+14) Division of sister chromatids
+19) Human spinal cord
+20) Most of the brain cells are at the G0 stage
+	G0| cell arrested, doesn't continue cell cycle
+	
+Formation of sister chromatids
+Eukaryotic chromosomes
+	homologous chromosomes| eukaryotic chromosomes that contain the same genes
+	diploid| cells with pairs of homologous chromosomes
+	typical human has 23 pairs of chomosomes, 23rd pair are sex chromosomes
+Homologous chromosomes
+	usually don't have identical nucleotide sequence (mutations)
+	they can have the different alleles (genes)
+Mitotic phase cell division
+	mitosis | division of nucleus
+	cytokineseis| division of cell
