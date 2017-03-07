@@ -155,7 +155,7 @@ class TourFinder
 
 	    board[x][y] = 0;
 
-	    System.out.println( this ); //refresh screen
+	    //System.out.println( this ); //refresh screen
 	}
     }//end findTour()
 
