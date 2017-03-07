@@ -249,3 +249,11 @@ Homologous chromosomes
 Mitotic phase cell division
 	mitosis | division of nucleus
 	cytokineseis| division of cell
+	
+-=-=3/7/17=-=-
+Difference between cancer and tumor
+	Cancer| group of diseases characterized by uncontrollable growth and spread
+	Tumor| benign(non-cancerous), malignant(cancerous)
+Role of cell division in cancer
+	unregulated cell division and tumor formation
+	
