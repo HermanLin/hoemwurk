@@ -8,6 +8,8 @@ public class Mysterion {
     /*
       mysterion
       @pre: takes an int array and integers a, b, and c
+	    a: lower, left
+	    b: upper, right
       @post: 
      */
     public static int mysterion (int[] arr, int a, int b, int c) {
@@ -42,13 +44,13 @@ public class Mysterion {
 	for (int x = 0; x < size; x ++) {
 	    retArr[x] = (int)(Math.random() * 25);
 
-	    /*============================================
+
 	    //Testing cases with unique elements
 	    for (int y = 0; y < x; y ++) {
 		while (retArr[x] == retArr[y])
 		    retArr[y] = (int)(Math.random() * 25);		
 	    }
-
+	    /*============================================
 	    ============================================*/
 	}
 	return retArr;
@@ -71,10 +73,10 @@ public class Mysterion {
     public static void main (String[] args) {
 
 	//Testing array from class...
-	int[] classA = {1, 28, 33, 4982, 37};
-	System.out.println("classArray: " + printArr(classA));
-	System.out.println("a = 0, b = 4, c = 2");
-	System.out.println("s = " + mysterion(classA, 0, 4, 2) + "\n");
+	//int[] classA = {1, 28, 33, 4982, 37};
+	//System.out.println("classArray: " + printArr(classA));
+	//System.out.println("a = 0, b = 4, c = 2");
+	//System.out.println("s = " + mysterion(classA, 0, 4, 2) + "\n");
 	
 	//testing 5 randomly filled arrays...
 	for (int x = 0; x < 5; x ++) {
@@ -83,12 +85,12 @@ public class Mysterion {
 	    
 	    //random integers for a b c within the range for retArr
 	    int p, q, r;
-	    p = (int)(Math.random() * 7);
-	    q = (int)(Math.random() * 7);
-	    r = (int)(Math.random() * 7);
+	    //p = (int)(Math.random() * 7);
+	    //q = (int)(Math.random() * 7);
+	    //r = (int)(Math.random() * 7);
 
 	    //testing same a, b, c
-	    //p = 0; q = 4; r = 2;
+	    p = 0; q = 6; r = 2;
 	    System.out.println("a: " + p + ", b: " + q + ", c: " + r);
 
 	    System.out.println("s = " + mysterion(retArr, q, p, r));
