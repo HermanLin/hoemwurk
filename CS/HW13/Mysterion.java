@@ -8,7 +8,8 @@ public class Mysterion {
     /*
       mysterion
       @pre: takes an int array and integers a, b, and c
-      @post: 
+      @post: swaps the indexes a, b, and c randomly
+             
      */
     public static int mysterion (int[] arr, int a, int b, int c) {
 	int v = arr[c];
@@ -42,13 +43,13 @@ public class Mysterion {
 	for (int x = 0; x < size; x ++) {
 	    retArr[x] = (int)(Math.random() * 25);
 
-	    /*============================================
+
 	    //Testing cases with unique elements
 	    for (int y = 0; y < x; y ++) {
 		while (retArr[x] == retArr[y])
 		    retArr[y] = (int)(Math.random() * 25);		
 	    }
-
+	    /*============================================
 	    ============================================*/
 	}
 	return retArr;
@@ -86,7 +87,11 @@ public class Mysterion {
 	    p = (int)(Math.random() * 7);
 	    q = (int)(Math.random() * 7);
 	    r = (int)(Math.random() * 7);
-
+	    while (p == q)
+		q = (int)(Math.random() * 7);
+	    while (r == p || r == q)
+		r = (int)(Math.random() * 7);
+	    
 	    //testing same a, b, c
 	    //p = 0; q = 4; r = 2;
 	    System.out.println("a: " + p + ", b: " + q + ", c: " + r);
