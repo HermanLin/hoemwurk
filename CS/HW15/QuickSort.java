@@ -1,17 +1,34 @@
+/*Herman Line
+APCS2 - pd3
+HW15 -- So So Quick
+2017-3-8*/
+
 /*****************************************************
  * class QuickSort
  * (skeleton) <<delete this line if untrue>>
  * Implements quicksort algo to sort an array of ints in place
  *
  * 1. Summary of QuickSort algorithm:
- * QSort(arr): 
+ * QSort(arr): divide the array in half and call quicksort
+ * on each half. Eqch call on quicksort calls partition
+ * to "sort" each of the halves.
  *
- * 2a. Worst pivot choice / array state and associated runtime: 
+ * 2a. Worst pivot choice 
+ * 		 state: pivot choice at either ends of the array
+ * 		 runtime: O(n^2) 
  *
  * 2b. Best pivot choice / array state and associated runtime:
+ *		 state: pivot choice is in the center
+ *		 runtime: O(nlogn)
  *
  * 3. Approach to handling duplicate values in array:
- *
+ * There is no specific way to handle duplicates because 
+ * of the nature of the partition method. Partition moves
+ * values smaller than the value of the pivot position to
+ * the left and values larger than the value of the pivot
+ * position to the right. If there are duplicates (i.e 2, 2)
+ * it's only a matter of whether the computer recognizes
+ * 2 as greater than 2 or less than 2 (most likely the latter). 
  *****************************************************/
 
 /***
