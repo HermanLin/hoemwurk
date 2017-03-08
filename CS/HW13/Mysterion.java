@@ -8,8 +8,14 @@ public class Mysterion {
     /*
       mysterion
       @pre: takes an int array and integers a, b, and c
+<<<<<<< HEAD
       @post: swaps the indexes a, b, and c randomly
              
+=======
+	    a: lower, left
+	    b: upper, right
+      @post: 
+>>>>>>> 19b2832f24d347de42c15b86d92d7a2e75a546bc
      */
     public static int mysterion (int[] arr, int a, int b, int c) {
 	int v = arr[c];
@@ -72,10 +78,10 @@ public class Mysterion {
     public static void main (String[] args) {
 
 	//Testing array from class...
-	int[] classA = {1, 28, 33, 4982, 37};
-	System.out.println("classArray: " + printArr(classA));
-	System.out.println("a = 0, b = 4, c = 2");
-	System.out.println("s = " + mysterion(classA, 0, 4, 2) + "\n");
+	//int[] classA = {1, 28, 33, 4982, 37};
+	//System.out.println("classArray: " + printArr(classA));
+	//System.out.println("a = 0, b = 4, c = 2");
+	//System.out.println("s = " + mysterion(classA, 0, 4, 2) + "\n");
 	
 	//testing 5 randomly filled arrays...
 	for (int x = 0; x < 5; x ++) {
@@ -84,6 +90,7 @@ public class Mysterion {
 	    
 	    //random integers for a b c within the range for retArr
 	    int p, q, r;
+<<<<<<< HEAD
 	    p = (int)(Math.random() * 7);
 	    q = (int)(Math.random() * 7);
 	    r = (int)(Math.random() * 7);
@@ -92,8 +99,14 @@ public class Mysterion {
 	    while (r == p || r == q)
 		r = (int)(Math.random() * 7);
 	    
+=======
+	    //p = (int)(Math.random() * 7);
+	    //q = (int)(Math.random() * 7);
+	    //r = (int)(Math.random() * 7);
+
+>>>>>>> 19b2832f24d347de42c15b86d92d7a2e75a546bc
 	    //testing same a, b, c
-	    //p = 0; q = 4; r = 2;
+	    p = 0; q = 6; r = 2;
 	    System.out.println("a: " + p + ", b: " + q + ", c: " + r);
 
 	    System.out.println("s = " + mysterion(retArr, q, p, r));
