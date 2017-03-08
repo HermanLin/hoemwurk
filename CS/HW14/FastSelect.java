@@ -3,6 +3,14 @@ ACPS2 - pd3
 HW14 -- So So Fast
 2017-3-7*/
 
+/*=======================ALGORITHM======================
+ * For my algorithm I found out that to ensure that
+ * the yth smallest value you want is in the correct
+ * spot in the array, you need to run the partition
+ * method yth + 1 times. After doing so, you can 
+ * ensure that arr[yth] will be the yth smallest number.
+ =====================================================*/
+
 public class FastSelect {
 	
 	/*|||||||||||||||||||||||||||||||||||||||||
@@ -11,27 +19,26 @@ public class FastSelect {
 		 right bound integers and a pivot point
 	pst: returns the position
 	|||||||||||||||||||||||||||||||||||||||||*/
-	public static int partition (int[] arr, int left, int right, int pvtPos) {
+	public static int partition(int arr[], int left, int right, int pvtPos) {
 		int pvtVal = arr[pvtPos];
 		swap(arr, pvtPos, right);
 		int storVal = left;
-		
-		for (int z = left; z < right; z ++) {
-			if (arr[z] <= pvtVal) {
-				swap(arr, z, storVal);
+	
+		for (int i = left; i < right; i++) {
+			if (arr[i] <= pvtVal) {
+				swap(arr, i, storVal);
 				storVal++;
 			}
-		}
+		}	
 		swap(arr, storVal, right);
-		
 		return storVal;
-	}
+  }
 	
-	/*|||||||||||||||||||||||||||||||||||||||||||||||
+	/*||||||||||||||||||||||||||||||||||||||||||||||
 	swap
-	pre: takes an int array and two indexes to switch
+	pre: takes int array u and two indexes to switch
 	pst: switches indexes a and b
-	|||||||||||||||||||||||||||||||||||||||||||||||*/
+	||||||||||||||||||||||||||||||||||||||||||||||*/
 	public static void swap (int[] u, int a, int b) {
 		int store = u[a];
 		u[a] = u[b];
@@ -72,16 +79,23 @@ public class FastSelect {
 	//MAIN METHOD//
 	//|||||||||||//
 	public static void main (String[] args) {
+		String subfix = "";
+		int[] newArrOne = randArr(8);
 		
-		System.out.println("Testing 3rd smallest number...");
-		int[] newArr = randArr(7);
-		System.out.println("Array: " + printArr(newArr));
-		
-		for (int x = 0; x < 3; x ++) {
-			//System.out.println("a = 0, b = 6, c = " + x);
-			partition(newArr, 0, 6, x);
-			//System.out.println("Array after run: " + printArr(newArr));
+		for (int i = 0; i < 5; i ++) {
+			if (i == 0) subfix = "st";
+			else if (i == 1) subfix = "nd";
+			else if (i == 2) subfix = "rd";
+			else subfix = "th";
+			
+			System.out.println("Testing for " + (i+1) + subfix + " smallest number...");
+			
+			System.out.println("Array: " + printArr(newArrOne));
+			for (int yth = 0; yth <= i+1; yth++) {
+				partition(newArrOne, 0, 7, yth);
+				System.out.println(printArr(newArrOne));
+			}
+			System.out.println((i+1) + subfix + " smallest number is " + newArrOne[i] + "\n");
 		}
-		System.out.println("3rd smallest number is " + newArr[2]);
 	}
 }
