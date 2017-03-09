@@ -86,6 +86,9 @@ public class QuickSort {
 	 * 		quicksort (arr, pvtPos + 1, right)
 	 *****************************************************/
   public static void qsort( int[] d ) { 
+		int leftBound = 0;
+		int rightBound = d.length - 1;
+		
 		quicksort (d, leftBound, rightBound);
   }
 
