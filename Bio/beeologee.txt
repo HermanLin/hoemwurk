@@ -281,3 +281,7 @@ From benign to malignant
 	cancer cells can divide indefinitely
 Programmed cell death (apoptosis)
 	helps shape tissues during development
+
+DNA replication
+	dna is negatively charged because of phosphate group
+	
