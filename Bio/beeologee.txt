@@ -257,3 +257,19 @@ Difference between cancer and tumor
 Role of cell division in cancer
 	unregulated cell division and tumor formation
 	
+-=-=3/9/17=-=-
+EXAM #3
+- Cancer
+- DNA replication
+- Sexual reproduction - meiosis, spermatogenesis, oogenesis (and their hormones)
+
+Cell cycle checkpoints
+	G1-S transition, G2-M transition, Exit M phase transition
+	where the cell assesses whether conditions are favorable for cell division
+	cyclins
+		cdk (cyclin-dependent kinases)
+		tumor supressor (p53, checks if DNA is damaged or not)
+Tumor suppressors and oncogenes
+	oncogenes| gene that normally directs cell growth, if altered can promote or allow uncontrolled growth
+	tumor suppressor genes| directs the production of a protein that is part of the system that regulates cell division
+	
