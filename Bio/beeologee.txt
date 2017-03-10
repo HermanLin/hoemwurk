@@ -272,4 +272,12 @@ Cell cycle checkpoints
 Tumor suppressors and oncogenes
 	oncogenes| gene that normally directs cell growth, if altered can promote or allow uncontrolled growth
 	tumor suppressor genes| directs the production of a protein that is part of the system that regulates cell division
-	
+
+-=-=3/10/17=-=-
+From benign to malignant	
+	cancer cells divide can leave the original site and enter blood, lymph, or tissues
+	most cells divide a set number (60-70) times, then stop
+		limits benign tumors to small sizes
+	cancer cells can divide indefinitely
+Programmed cell death (apoptosis)
+	helps shape tissues during development
