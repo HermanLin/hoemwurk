@@ -14,14 +14,30 @@ public class LList implements List
     // constructor -- initializes instance vars
     public LList( ) 
     {
-
+	_head = new LLNode(null);
+	_size = 0;
     }
 
 
     //--------------v  List interface methods  v--------------
 
-    /* YOUR IMPLEMENTATIONS HERE */
+    public boolean add (String x) {
+	LLNode _temp = new LLNode(x, null);
+	LLNode _current = _head;
+	for (int x = 0; x < _size && _current.getNext() != null; x ++)
+	    _current = _current.getNext();
+	
+	return true;
+    }
 
+    public String get (int i) {
+	return "test";
+    }
+
+    public String set (int i, String x) {
+	return "test";
+    }
+    
     //return number of nodes in list
     public int size() { return _size; } 
 
