@@ -284,4 +284,20 @@ Programmed cell death (apoptosis)
 
 DNA replication
 	dna is negatively charged because of phosphate group
-	
+
+-=-=3/13/17=-=-
+A, G = purine
+T, C = pyrimidine
+A--T = double bond, G---C = triplebond
+backbone = covalent bonds
+
+DNA replication
+	replication bubble
+		origin of replication on dna where splitting begins
+		"force" to break H bonds = dna helicase
+	space holders
+		single strand dna binding proteins (SSDBP)
+	enzyme to make new dna
+		dna polymerase
+	dnna ligase
+		
