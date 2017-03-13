@@ -1,3 +1,8 @@
+/*Herman Lin
+APCS2 - pd3
+HW16a -- We Got a Little Ol' Convoy...
+2017-3-12*/
+
 /*****************************************************
  * class LLNode
  * Implements a node, for use in lists and other container classes.
@@ -10,8 +15,7 @@ public class LLNode
     private LLNode _nextNode; //pointer to next LLNode
 
     // constructor -- initializes instance vars
-    public LLNode( LLNode next ) {
-	_nextNode = next;
+    public LLNode() {
     }
     
     public LLNode( String value, LLNode next ) 
@@ -31,14 +35,16 @@ public class LLNode
     //--------------v  MUTATORS  v--------------
     public String setCargo( String newCargo ) 
     {
+	String old = _cargo;
 	_cargo = newCargo;
-	return _cargo;
+	return old;
     }
 
     public LLNode setNext( LLNode newNext ) 
     {
+	LLNode old = _nextNode;
 	_nextNode = newNext;
-	return _nextNode;
+	return old;
     }
     //--------------^  MUTATORS  ^--------------
 

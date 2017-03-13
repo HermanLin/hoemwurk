@@ -1,3 +1,8 @@
+/*Herman Lin
+APCS2 - pd3
+HW16b -- Rockin' Through the Night
+2017-3-12*/
+
 /*****************************************************
  * class LList
  * skeleton
@@ -14,7 +19,7 @@ public class LList implements List
     // constructor -- initializes instance vars
     public LList( ) 
     {
-	_head = new LLNode(null);
+	//_head = new LLNode();
 	_size = 0;
     }
 
@@ -22,20 +27,41 @@ public class LList implements List
     //--------------v  List interface methods  v--------------
 
     public boolean add (String x) {
-	LLNode _temp = new LLNode(x, null);
-	LLNode _current = _head;
-	for (int x = 0; x < _size && _current.getNext() != null; x ++)
-	    _current = _current.getNext();
-	
+	if (_head == null) {
+	    _head = new LLNode(x, null);
+	    _size ++;
+	}
+	else {
+	    LLNode temp = _head;
+	    while (temp.getNext() != null)
+		temp = temp.getNext();
+	    temp.setNext(new LLNode(x, null));
+	    _size ++;
+	}
 	return true;
     }
 
     public String get (int i) {
-	return "test";
+	LLNode temp = _head;
+	if (i > _size)
+	    return "OUT OF BOUNDS";
+	else {
+	    for (int y = 0; y < i; y ++) 
+		temp = temp.getNext(); 
+	}
+	return temp.getCargo();
     }
 
     public String set (int i, String x) {
-	return "test";
+	LLNode temp = _head;
+	if (i > _size)
+	    return "OUT OF BOUNDS";
+	else {
+	    for (int y = 0; y < i; y ++)
+		temp = temp.getNext();
+	    temp.setCargo(x);
+	}
+	return x;
     }
     
     //return number of nodes in list
@@ -60,7 +86,7 @@ public class LList implements List
     //main method for testing
     public static void main( String[] args ) 
     {
-	/*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
+
 	LList james = new LList();
 
 	System.out.println( james );
@@ -88,6 +114,7 @@ public class LList implements List
 	System.out.println( "...and now 2nd item is: " + james.set(1,"got") );
 
 	System.out.println( james );
+	/*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     }
 
