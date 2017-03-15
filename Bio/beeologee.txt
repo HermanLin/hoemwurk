@@ -286,8 +286,8 @@ DNA replication
 	dna is negatively charged because of phosphate group
 
 -=-=3/13/17=-=-
-A, G = purine
-T, C = pyrimidine
+A, G = purine - two carbon rings
+T, C = pyrimidine - one carbon ring
 A--T = double bond, G---C = triplebond
 backbone = covalent bonds
 
