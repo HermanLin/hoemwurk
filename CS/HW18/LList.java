@@ -1,3 +1,4 @@
+
 /*Herman Lin
 APCS2 - pd3
 HW18b -- On The DLL
@@ -18,9 +19,8 @@ public class LList implements List
     private int _size;
 
     // constructor -- initializes instance vars
-    public LList(DLLNode next) 
+    public LList() 
     {
-	_tail = next;
 	_size = 0;
     }
 
@@ -31,7 +31,7 @@ public class LList implements List
 	if (_head == null) {
 	    _head = new DLLNode(x, null, null);
 	    _size ++;
-	
+	}
 	else {
 	    DLLNode temp = _head;
 	    while (temp.getNext() != null)
@@ -67,8 +67,10 @@ public class LList implements List
 
     //insert a node containing newVal at position index
     public void add (int index, String newVal) {
-	if (index >= _size)
+	if (index >= _size) {
 	    this.add(newVal);
+	    _size ++;
+	}
 
 	DLLNode temp = _head;
 	for (int i = 0; i < index - 1; i ++)
@@ -89,6 +91,7 @@ public class LList implements List
 	    temp = temp.getNext();
 	old = temp.getNext().getCargo();
 	temp.setNext(temp.getNext().getNext());
+	_size --;
 	return old;
     }
     
@@ -112,6 +115,22 @@ public class LList implements List
 
 
     //main method for testing
+    public static void main(String[] args) {
+        LList newList = new LList();
+        newList.add("a");
+        newList.add("b");
+        newList.add("c");
+        newList.add("d");
+        newList.add("e");
+        System.out.println(newList);
+	newList.remove(1);
+	newList.remove(3);
+        System.out.println(newList);
+
+	newList.set(0, "twentyone");
+	System.out.println(newList);
+    }
+    /*
     public static void main( String[] args ) 
     {
 
@@ -143,7 +162,7 @@ public class LList implements List
 
 	System.out.println( james );
 	/*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
-	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 
 	james.add( 1, "a" );
 	System.out.println( "Adding 'a' as the 2nd item..." );
@@ -153,6 +172,7 @@ public class LList implements List
 	//james.remove( 3 );
 	System.out.println( james );
     }
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/    
 
 }//end class LList
 
