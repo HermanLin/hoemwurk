@@ -1,8 +1,8 @@
 
 /*Herman Lin
 APCS2 - pd3
-HW18b -- On The DLL
-2017-3-15*/
+HW19 -- Generically Speaking
+2017-3-16/
 
 /*****************************************************
  * class LList
