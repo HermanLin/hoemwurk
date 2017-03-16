@@ -117,10 +117,13 @@ public class LList<T> implements List<T>
     //main method for testing
     public static void main(String[] args) {
         LList newList = new LList();
+	LList gerbil = new LList();
+	gerbil.add("physics");
+	
         newList.add("a");
         newList.add("b");
         newList.add(3);
-        newList.add("d");
+        newList.add(gerbil);
         newList.add(true);
         System.out.println(newList);
 	newList.remove(1);
