@@ -300,4 +300,24 @@ DNA replication
 	enzyme to make new dna
 		dna polymerase
 	dnna ligase
+
+-=-=3/16/17=-=-
+Meselson and Stahls' proof of semi conservative replication (1958)
+	theories (of replication)
+		conservative| original dna remains intact after replication
+		dispersive| original dna split up into fragments and dispersed throughout both replicated dna
+		semiconservative| one strand of original dna in each of replicated dna
 		
+Telomere and telomerase
+	curl up to protect end of dna, creates an "end" for the dna strand (polymerase cuts off the end)
+	have a specific dna sequence for curling
+DNA mismatch
+	DNA Polymerase mismatches 1 nucleotide every 1000 to 100000 base pairs
+	completed DNA strands contain only about 1 mistake in every 100 million to 1 billion base pairs
+	DNA repair enzymes which proofread the DNA (mismatched nucleotides)
+Mutation
+	point (nucleotide substitutions)| changes to individual nucleotides in the dna sequence
+	insertion| one or more new nucleotide pairs are inserted into the dna double helix
+	deletion| one or more nucleotide pairs are removed from the double helix
+	inversion| piece of dna is cut out of a chromosome, turned around, and re-inserted into the gap
+	translocation| chuck of dna (often very large) is removed from one chromosome replaced on another
