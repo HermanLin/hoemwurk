@@ -321,3 +321,32 @@ Mutation
 	deletion| one or more nucleotide pairs are removed from the double helix
 	inversion| piece of dna is cut out of a chromosome, turned around, and re-inserted into the gap
 	translocation| chuck of dna (often very large) is removed from one chromosome replaced on another
+	
+-=-=3/21/17=-=-
+TEST#3
+- dna replication
+- dna reproduction (in animals/humans)	
+- mitosis and meiosis
+
+Sexual reproduction
+Chromosomes are matched in homologous pairs
+	somatic cells | have pairs of homologous chromosomes, receiving one member of each pair from each parent
+	homologous chromosomes
+		matched in
+			length
+			centromere position
+			gene locations
+				locus| position of gene
+				different versions of a gene (allele) may be found at the same locus on maternal and paternal chromosomes
+Gametes are haploid cells
+	meiosis converts diploid nuclei to haploid nuclei
+		diploid cells have two homologous sets of chromosomes
+		haploid cells have one set of chromosomes
+		meiosis occurs in sex organs, producing gametes (sperm and egg)
+Meiosis reduces the chromosome number from diploid to haploid
+	meiosis is preceded by interphase
+	has two divisions compared to mitosis' one
+		during meiosis I, homologous chromosomes separate
+			chromosome number is reduced by half
+		during meiosis II, sister chromatids separate
+			chromosome number remains the same
