@@ -350,3 +350,19 @@ Meiosis reduces the chromosome number from diploid to haploid
 			chromosome number is reduced by half
 		during meiosis II, sister chromatids separate
 			chromosome number remains the same
+
+-=-=3/22/17=-=-
+>< - chromosome (when duplicated), < chromatid (when duplicated)
+
+Why do so many organisms reproduce sexually
+How do animals reproduce sexually
+	External
+	Internal
+Spermatogenesis
+	spermatogonia| inside the wall of each seminiferous tubule, give rise to sperm
+	sertoli cells| nourish the developing sperm and regulate their growth
+Oogenesis
+	begins before birth, diploid cells start meiosis and stop
+	each month about one primary oocyte resumes meiosis
+	a secondary oocyte arrested at metaphase of meiosis II is ovulated
+	meiosis of the ovum is completed after fertilization
