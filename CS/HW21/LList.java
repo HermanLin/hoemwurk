@@ -254,8 +254,7 @@ public class LList<T> implements List<T>
 	{
 	    //place dummy node in front of head
             //...other housekeeping chores?
-	    _dummy = _head;
-            _head.setPrev(_dummy);
+	    _dummy = new DLLNode(null, null, _head);
 	    _size ++;
 	}
 
@@ -269,8 +268,9 @@ public class LList<T> implements List<T>
 
 	//return next element in this iteration
 	public T next() 
-	{
+	{	    
             _dummy = _dummy.getNext();
+	    _okayToRemove = true;
 	    return _dummy.getCargo();
 	}
 
