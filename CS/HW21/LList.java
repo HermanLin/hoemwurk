@@ -255,7 +255,7 @@ public class LList<T> implements List<T>
 	    //place dummy node in front of head
             //...other housekeeping chores?
 	    _dummy = new DLLNode(null, null, _head);
-	    _size ++;
+	    _okToRemove = false;
 	}
 
 	//--------------v  Iterator interface methods  v-------------
@@ -270,6 +270,8 @@ public class LList<T> implements List<T>
 	public T next() 
 	{	    
             _dummy = _dummy.getNext();
+	    if (_dummy == null)
+		throw new NoSuchElementException();
 	    _okayToRemove = true;
 	    return _dummy.getCargo();
 	}
@@ -292,13 +294,15 @@ public class LList<T> implements List<T>
 	    }
 
 	    //if removing first node...
-            if (_dummy == _head) {
+            else if (_dummy == _head) {
 		_head = _head.getNext();
+		_head.setPrev(null);
 	    }
  
 	    //if removing last node...
-            if (_dummy == _tail) {
+            else if (_dummy == _tail) {
 		_tail = _tail.getPrev();
+		_tail.setNext(null);
 	    }
 
 	    //if removing an interior node...
