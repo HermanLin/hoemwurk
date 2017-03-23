@@ -26,13 +26,29 @@ public class Latkes
     //means of insertion
     public void push( String s ) 
     {
-	/* YOUR IMPLEMENTATION HERE */
+	if (this.isFull())
+	    System.out.println("stack is full");
+	
+	else {
+	    String[] _stor = new String[_stackSize + 1];
+	    _stor[0] = s;
+	    for (int i = 0; i < _stackSize; i ++)
+		_stor[i + 1] = _stack[i];
+	}
     }
 
     //means of removal
     public String pop( ) 
-    { 
-	/* YOUR IMPLEMENTATION HERE */
+    {
+	if (this.isEmpty())
+	    return null;
+       
+        String[] _stor = new String[_stackSize - 1];
+	String retStr = _stack[0];
+	for (int i = 1; i < _stackSize; i ++)
+	    _stor[i-1] = _stack[i];
+	_stack = _stor;
+	return retStr;
     }
 
     //chk for emptiness
@@ -46,7 +62,7 @@ public class Latkes
     //chk for fullness
     public boolean isFull() 
     {
-	if (_stackSize == _stack.size)
+	if (_stackSize == _stack.length)
 	    return true;
 	return false;
     }
