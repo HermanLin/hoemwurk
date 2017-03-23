@@ -34,6 +34,7 @@ public class Latkes
 	    _stor[0] = s;
 	    for (int i = 0; i < _stackSize; i ++)
 		_stor[i + 1] = _stack[i];
+	    _stackSize ++;
 	}
     }
 
@@ -48,6 +49,7 @@ public class Latkes
 	for (int i = 1; i < _stackSize; i ++)
 	    _stor[i-1] = _stack[i];
 	_stack = _stor;
+	_stackSize --;
 	return retStr;
     }
 
