@@ -17,12 +17,14 @@ public class LatKtS
     { 
 	int length = s.length();
 	String reversed = "";
+	String word = s;
 	
-	Latkes rev = new Latkes[length];
-	for (int i = length - 1; i < 0; i --)
-	    rev.push(s.substring(length -i-1, length-i);
-	for (int i = 0; i < length - 1; i ++)
-	    reversed += rev[i];
+	Latkes rev = new Latkes(length);
+	for (int i = 0; i < length; i ++) {
+	    rev.push(word.substring(i, i + 1));
+	}
+	while (!rev.isEmpty())
+	    reversed += rev.pop();
 	return reversed;
     }//end flip()
 
