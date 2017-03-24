@@ -1,3 +1,8 @@
+/*Herman Lin
+APCS2 - pd3
+HW23 -- Stack: What Is It Good For?
+2017-3-23*/
+
 /*****************************************************
  * class LatKtS (LatKeysToSuccess)
  * Driver class for Latkes.
@@ -37,7 +42,36 @@ public class LatKtS
      **********************************************************/
     public static boolean allMatched( String s ) 
     { 
-	return true;
+	Latkes stack = new Latkes(s.length());
+        for(int i = 0; i < s.length(); i++) {
+            String paren = s.substring(i, i + 1);
+	    //System.out.println(" " + s.substring(i,i+1));
+
+	    //if you have an opening parens, push to stack
+            if(paren.equals("(") || paren.equals("[") || paren.equals("{")) {
+                stack.push(paren);
+            }
+
+	    //if you have a closing parens...
+	    else if(paren.equals(")")) {
+                if(stack.isEmpty()) return false;
+		//if closing parens doesn't match with opening...
+                if(!stack.pop().equals("(")) return false;	       
+            }
+	    //if you have a closing bracket...
+	    else if(paren.equals("]")) {
+                if(stack.isEmpty()) return false;
+		//if closing bracket doesn't match with opening...
+                if(!stack.pop().equals("[")) return false;
+            }
+	    //if you have a closing curly...
+	    else if(paren.equals("}")) {
+                if(stack.isEmpty()) return false;
+		//if closing curly doesn't match with opening...
+                if(!stack.pop().equals("{")) return false;
+            }
+        }
+        return stack.isEmpty();
     }//end allMatched()
 
 
@@ -45,13 +79,13 @@ public class LatKtS
     public static void main( String[] args ) { 
 
 	System.out.println(flip("stressed"));
-	/*v~~~~~~~~~~~~~~MAKE MORE~~~~~~~~~~~~~~v
         System.out.println(allMatched( "({}[()])" )); //true
         System.out.println(allMatched( "([)]" ) ); //false
         System.out.println(allMatched( "(){([])}" ) ); //true
         System.out.println(allMatched( "](){([])}" ) ); //false
         System.out.println(allMatched( "(){([])}(" ) ); //false
         System.out.println(allMatched( "()[[]]{{{{((([])))}}}}" ) ); //true
+	/*v~~~~~~~~~~~~~~MAKE MORE~~~~~~~~~~~~~~v
           ^~~~~~~~~~~~~~~~AWESOME~~~~~~~~~~~~~~~^*/
     }
 
