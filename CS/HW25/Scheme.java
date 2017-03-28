@@ -4,10 +4,15 @@
  *
  * ALGORITHM for EVALUATING A SCHEME EXPRESSION:
  *
- * <<< YOUR PROCEDURE HERE >>>
+ * First put the string into an ArrayList of strings
+ * without whitespaces. Then work backwords, adding
+ * ')', numbers, and operations into a stack. When you
+ * reach an '(', run unload on the stack and remove the 
+ * '('. Repeat until evaluation complete.
  * 
- * STACK OF CHOICE: _____ by _____
- * b/c ...
+ * STACK OF CHOICE: LLStack by __?__
+ * b/c nodes help ensure that nothing from the expression
+ * is skipped and not evaluated
  ******************************************************/
 
 public class Scheme 
