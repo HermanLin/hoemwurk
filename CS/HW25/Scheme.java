@@ -54,17 +54,17 @@ public class Scheme
      *           Ops: + is 1, - is 2, * is 3
      ******************************************************/
     public static String unload( int op, Stack<String> numbers ) 
-    {
+    {	
 	int firstNumb = Integer.parseInt(numbers.pop());
-	int secndNumb = 0;
-	while (!(numbers.peek().equals("}"))) {
-	    secndNumb = Integer.parseInt(numbers.pop());
-	    if (op == 1)
-		firstNumb += secndNumb;
-	    else if (op == 2)
-		firstNumb -= secndNumb;
-	    else if (op == 3)
-		firstNumb *= secndNumb;
+
+	while(!(numbers.peek().equals(")"))) {
+	    int secndNumb = Integer.parseInt(numbers.pop());
+	    if ( op == 1 )
+	        firstNumb = firstNumb + secndNumb;
+	    else if ( op == 2 )
+		firstNumb = firstNumb - secndNumb;
+	    else if ( op == 3 )
+		firstNumb = firstNumb * secndNumb;
 	}
 	if (numbers.peek().equals(")"))
 	    numbers.pop();
@@ -93,7 +93,6 @@ public class Scheme
 	System.out.println(zoo1);
 	System.out.println("zoo1 eval'd: " + evaluate(zoo1) );
 	//...7
-	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	String zoo2 = "( + 4 ( * 2 5 ) 3 )";
 	System.out.println(zoo2);
@@ -109,8 +108,8 @@ public class Scheme
 	System.out.println(zoo4);
 	System.out.println("zoo4 eval'd: " + evaluate(zoo4) );
 	//...-4
+	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
     }//main
 
 }//end class Scheme
