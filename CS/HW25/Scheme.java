@@ -24,7 +24,24 @@ public class Scheme
      ******************************************************/
     public static String evaluate( String expr ) 
     {
-	/* YOUR IMPLEMENTATION HERE */
+	String retStr = "";
+	String[] exprArr = expr.split("\\s+");
+	Stack<String> pancake = new LLStack<String>();
+	
+	for (int x = exprArr.length - 1; x >= 0; x --) {
+	    if (exprArr[x].equals("(")) {
+		String oper = pancake.pop();
+		if (oper.equals("+")) 
+		    pancake.push(unload(1, pancake));
+		else if (oper.equals("-"))
+		    pancake.push(unload(2, pancake));
+		else if (oper.equals("*"))
+		    pancake.push(unload(3, pancake));		
+	    }
+	    else pancake.push(exprArr[x]);
+	}
+        retStr = pancake.pop();
+	return retStr;
     }
 
 
@@ -38,7 +55,20 @@ public class Scheme
      ******************************************************/
     public static String unload( int op, Stack<String> numbers ) 
     {
-	/* YOUR IMPLEMENTATION HERE */
+	int firstNumb = Integer.parseInt(numbers.pop());
+	int secndNumb = 0;
+	while (!(numbers.peek().equals("}"))) {
+	    secndNumb = Integer.parseInt(numbers.pop());
+	    if (op == 1)
+		firstNumb += secndNumb;
+	    else if (op == 2)
+		firstNumb -= secndNumb;
+	    else if (op == 3)
+		firstNumb *= secndNumb;
+	}
+	if (numbers.peek().equals(")"))
+	    numbers.pop();
+	return firstNumb + "";
     }
 
 
@@ -59,11 +89,11 @@ public class Scheme
     //main method for testing
     public static void main( String[] args ) 
     {
-	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	String zoo1 = "( + 4 3 )";
 	System.out.println(zoo1);
 	System.out.println("zoo1 eval'd: " + evaluate(zoo1) );
 	//...7
+	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	String zoo2 = "( + 4 ( * 2 5 ) 3 )";
 	System.out.println(zoo2);
