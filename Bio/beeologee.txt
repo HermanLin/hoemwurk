@@ -374,3 +374,17 @@ Independent assortment in meiosis
 		each pair of chromosomes independently aligns at the cell equator
 		equal probability of maternal/paternal chomosome facing a given pole
 Random mating
+
+-=-=3/29/17=-=-
+Various strategies of sexual reproduction
+	unicellular organisms spend most of their life in haploid life cycles
+	plants have alternation of generations (haploid gametophyte alternates with a diploid sporophyte generation)
+	many fungal species can reproduce sexually/asexually
+	most animals perform sexual reproduction (exceptions: budding, regenerative, parthenogenesis, hermaphrodites)
+Plants have adaptations for life on land
+	life on land = unlimited sunlight, abundant CO2, initially few pathogens/herbivores
+	challenges
+		maintaining moisture within cells
+		obtaining resources from soil and air
+		supporting body in air
+		reproducing and dispersing offspring without water
