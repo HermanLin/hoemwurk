@@ -34,10 +34,6 @@ public class RQueue<T> implements Queue<T>
 
     public void enqueue( T enQVal ) 
     {
-	if (_end == null) {
-	    _end = new LLNode<T>(enQVal, null);
-	    _front = _end;
-	}
 	_end = new LLNode<T>(enQVal, _end);
     }
 
@@ -46,7 +42,7 @@ public class RQueue<T> implements Queue<T>
     // assume _queue ! empty
     public T dequeue() 
     { 
-	/* YIH */
+	
     }
 
 
@@ -65,7 +61,7 @@ public class RQueue<T> implements Queue<T>
      ******************************************/
     public void sample () 
     {
-	/* YIH */
+	
     }
 
 
