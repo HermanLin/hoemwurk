@@ -35,14 +35,23 @@ public class RQueue<T> implements Queue<T>
     public void enqueue( T enQVal ) 
     {
 	_end = new LLNode<T>(enQVal, _end);
+	_size ++;
     }
 
 
     // remove and return thing at front of queue, then reorder elements
     // assume _queue ! empty
     public T dequeue() 
-    { 
-	
+    {
+	LLNode<T> temp = _end;
+	T old;
+
+	while (temp.getNext() != _front)
+	    temp = temp.getNext();
+	old = temp.getValue();
+	_size --;
+	sample();
+	return old;
     }
 
 
@@ -61,9 +70,17 @@ public class RQueue<T> implements Queue<T>
      ******************************************/
     public void sample () 
     {
+	int rand = (int)(Math.random() * _size);
+	LLNode<T> temp = _end;
+	for (int i = 0; i < rand - 1; i ++)
+	    temp = temp.getNext();
+	//System.out.println(temp);
+	//System.out.println(rand);	       
+
+	LLNode<T> hold = new LLNode<T>(temp.getNext().getValue(), null);
+	//System.out.println(hold);
 	
     }
-
 
     public boolean isEmpty() 
     { 
@@ -88,8 +105,7 @@ public class RQueue<T> implements Queue<T>
     //main method for testing
     public static void main( String[] args ) 
     {
-	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	  Queue<String> PirateQueue = new RQueue<String>();
+	  RQueue<String> PirateQueue = new RQueue<String>();
 
 	  System.out.println("\nnow enqueuing..."); 
 	  PirateQueue.enqueue("Dread");
@@ -101,6 +117,10 @@ public class RQueue<T> implements Queue<T>
 
 	  System.out.println("\nnow testing toString()..."); 
 	  System.out.println( PirateQueue ); //for testing toString()...
+	  System.out.println("\ntesting sample()...");
+	  PirateQueue.sample();
+	  System.out.println( PirateQueue );
+	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	  System.out.println("\nnow dequeuing..."); 
 	  System.out.println( PirateQueue.dequeue() );
