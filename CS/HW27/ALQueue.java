@@ -1,3 +1,8 @@
+/*Herman Lin
+APCS2 - pd3
+HW27 -- ...Nor Do Aussies
+2017-3-29*/
+
 /*****************************************************
  * class ALQueue
  * uses an ArrayList to implement abstract data type QUEUE
