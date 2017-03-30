@@ -388,3 +388,12 @@ Plants have adaptations for life on land
 		obtaining resources from soil and air
 		supporting body in air
 		reproducing and dispersing offspring without water
+
+-=-=3/30/17=-=-
+How can we convert genetic information to proteins
+	ribosomes, mRNA/tRNA, endoplasmic reticulum, 
+Transcription and translation in prokaryotic cells
+	transcription
+	1 - initiation
+	2 - elongation
+	3 - termination
