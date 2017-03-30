@@ -25,16 +25,14 @@ public class ALQueue<T> implements Queue<T>
     // means of adding an item to collection 
     public void enqueue( T x ) 
     {
-	if (_queue.isEmpty())
-	    _queue.add(x);
-	_queue.add(0, x);
+        _queue.add(x);
     }//O(?)
 
 
     // means of removing an item from collection 
     public T dequeue() 
     {
-	return _queue.remove(_queue.size() - 1);
+	return _queue.remove(0);
     }//O(?)
 
 
