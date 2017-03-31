@@ -26,15 +26,22 @@ public class RQueue<T> implements Queue<T>
     // default constructor creates an empty queue
     public RQueue() 
     { 
-	_front = null;
-	_end = null; //first node
+	_front = null; //first node
+	_end = null; 
 	_size = 0;
     }
     
 
     public void enqueue( T enQVal ) 
     {
-	_end = new LLNode<T>(enQVal, _end);
+	if (_size == 0) {
+	    _end = new LLNode<T>(enQVal, null);
+	    _front = _end;
+	}
+	else {
+	    _end.setNext(new LLNode<T>(enQVal, null));
+	    _end = _end.getNext();
+	}
 	_size ++;
     }
 
@@ -43,14 +50,16 @@ public class RQueue<T> implements Queue<T>
     // assume _queue ! empty
     public T dequeue() 
     {
-	LLNode<T> temp = _end;
-	T old;
-
-	while (temp.getNext() != _front)
-	    temp = temp.getNext();
-	old = temp.getValue();
-	_size --;
 	sample();
+	LLNode<T> temp = _front;
+	System.out.println("front: " + temp);
+	T old = _end.getValue();	
+	if ( _front == null )
+	    _end = null;
+	while (temp != _end)
+	    temp = temp.getNext();
+	System.out.println("end?: " + temp);
+	_size --;
 	return old;
     }
 
@@ -70,16 +79,21 @@ public class RQueue<T> implements Queue<T>
      ******************************************/
     public void sample () 
     {
-	int rand = (int)(Math.random() * _size);
-	LLNode<T> temp = _end;
-	for (int i = 0; i < rand - 1; i ++)
-	    temp = temp.getNext();
-	//System.out.println(temp);
-	//System.out.println(rand);	       
-
-	LLNode<T> hold = new LLNode<T>(temp.getNext().getValue(), null);
-	//System.out.println(hold);
+	LLNode<T> temp = _front;
+	LLNode<T> cake = null;
 	
+	int rand = (int)(Math.random() * _size);
+	while (rand == _size - 1)
+	    rand = (int)(Math.random() * _size);	
+	System.out.println("rand = " + rand);
+	
+	for (int i = 0; i < rand - 1; i ++) {
+	    if (rand == 0) break;
+	    else temp = temp.getNext(); //get node before rand node
+	}
+	cake = temp.getNext(); //cake = rand node
+	temp.setNext(temp.getNext().getNext()); //remove cake from Q
+        enqueue(cake.getValue());
     }
 
     public boolean isEmpty() 
@@ -92,7 +106,7 @@ public class RQueue<T> implements Queue<T>
     public String toString() 
     { 
 	String retQ = "";
-        LLNode<T> temp = _end;
+        LLNode<T> temp = _front;
 	while (temp != null) {
 	    retQ += temp.getValue() + " ";
 	    temp = temp.getNext();
@@ -105,7 +119,7 @@ public class RQueue<T> implements Queue<T>
     //main method for testing
     public static void main( String[] args ) 
     {
-	  RQueue<String> PirateQueue = new RQueue<String>();
+	  Queue<String> PirateQueue = new RQueue<String>();
 
 	  System.out.println("\nnow enqueuing..."); 
 	  PirateQueue.enqueue("Dread");
@@ -117,19 +131,22 @@ public class RQueue<T> implements Queue<T>
 
 	  System.out.println("\nnow testing toString()..."); 
 	  System.out.println( PirateQueue ); //for testing toString()...
-	  System.out.println("\ntesting sample()...");
-	  PirateQueue.sample();
-	  System.out.println( PirateQueue );
-	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+	  
 	  System.out.println("\nnow dequeuing..."); 
 	  System.out.println( PirateQueue.dequeue() );
+	  System.out.println( PirateQueue );
+	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	  System.out.println( PirateQueue.dequeue() );
+	  System.out.println( PirateQueue );
 	  System.out.println( PirateQueue.dequeue() );
+	  System.out.println( PirateQueue );
 	  System.out.println( PirateQueue.dequeue() );
+	  System.out.println( PirateQueue );
 	  System.out.println( PirateQueue.dequeue() );
+	  System.out.println( PirateQueue );
 	  System.out.println( PirateQueue.dequeue() );
-
+	  System.out.println( PirateQueue );
+	  
 	  System.out.println("\nnow dequeuing fr empty queue..."); 
 	  System.out.println( PirateQueue.dequeue() );
 	  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
