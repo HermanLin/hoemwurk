@@ -1,3 +1,8 @@
+/*Herman Lin
+APCS2 - pd3
+HW28 -- Now Let's Consider You Lot at Fake Terry's
+2017-3-30*/
+
 /*****************************************************
  * class RQueue
  * A linked-list-based, randomized queue
@@ -26,21 +31,18 @@ public class RQueue<T> implements Queue<T>
     // default constructor creates an empty queue
     public RQueue() 
     { 
-	_front = null; //first node
-	_end = null; 
+	_front = _end = null;
 	_size = 0;
     }
     
 
     public void enqueue( T enQVal ) 
     {
-	if (_size == 0) {
-	    _end = new LLNode<T>(enQVal, null);
-	    _front = _end;
-	}
+	if (_size == 0) 
+	    _front = _end = new LLNode<T>(enQVal, null);
 	else {
 	    _end.setNext(new LLNode<T>(enQVal, null));
-	    _end = _end.getNext();
+	    _end = _end.getNext();	    
 	}
 	_size ++;
     }
@@ -50,17 +52,17 @@ public class RQueue<T> implements Queue<T>
     // assume _queue ! empty
     public T dequeue() 
     {
-	sample();
-	LLNode<T> temp = _front;
-	System.out.println("front: " + temp);
-	T old = _end.getValue();	
-	if ( _front == null )
-	    _end = null;
-	while (temp != _end)
-	    temp = temp.getNext();
-	System.out.println("end?: " + temp);
-	_size --;
-	return old;
+	if (_size == 0)
+	    return null;
+	else {
+	    sample();
+	    T old = _front.getValue();	
+	    if ( _front == null )
+		_end = null;
+	    _front = _front.getNext();
+	    _size --;	
+	    return old;
+	}
     }
 
 
@@ -71,29 +73,33 @@ public class RQueue<T> implements Queue<T>
     }
 
 
-    /******************************************
+    /*****************************************************************
      * void sample() -- a means of "shuffling" the queue
      * algo:
-     * 
-     * 
-     ******************************************/
+     * 1. Get a random index correlating to a random node in the queue
+     *    If (random == 0) stepTwo;
+     *    Else stepThreeTo;
+     * 2. Remove the first node by setting _front to its nextNode
+     * 3. Move the node you want to remove to the front and remove it
+     *    from its old position. Then set the node to _front with a
+     *    nextNode as the old _front
+     *****************************************************************/
     public void sample () 
     {
 	LLNode<T> temp = _front;
 	LLNode<T> cake = null;
 	
-	int rand = (int)(Math.random() * _size);
-	while (rand == _size - 1)
-	    rand = (int)(Math.random() * _size);	
-	System.out.println("rand = " + rand);
-	
-	for (int i = 0; i < rand - 1; i ++) {
-	    if (rand == 0) break;
-	    else temp = temp.getNext(); //get node before rand node
+	int rand = (int)(Math.random() * _size);		
+	if (rand == 0) {
+	    temp.setNext(temp.getNext()); //remove first node
 	}
-	cake = temp.getNext(); //cake = rand node
-	temp.setNext(temp.getNext().getNext()); //remove cake from Q
-        enqueue(cake.getValue());
+	else {
+	    for (int i = 0; i < rand - 1; i ++) 
+		temp = temp.getNext(); //get node before rand node	    
+	    cake = temp.getNext(); //cake = rand node
+	    temp.setNext(temp.getNext().getNext()); //remove cake from Q
+	    _front = new LLNode<T>(cake.getValue(), _front); //cake = new _front
+	} 
     }
 
     public boolean isEmpty() 
@@ -134,21 +140,21 @@ public class RQueue<T> implements Queue<T>
 	  
 	  System.out.println("\nnow dequeuing..."); 
 	  System.out.println( PirateQueue.dequeue() );
-	  System.out.println( PirateQueue );
-	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	  System.out.println( "QUEUE: " + PirateQueue );
 	  System.out.println( PirateQueue.dequeue() );
-	  System.out.println( PirateQueue );
+	  System.out.println( "QUEUE: " + PirateQueue );
 	  System.out.println( PirateQueue.dequeue() );
-	  System.out.println( PirateQueue );
+	  System.out.println( "QUEUE: " + PirateQueue );
 	  System.out.println( PirateQueue.dequeue() );
-	  System.out.println( PirateQueue );
+	  System.out.println( "QUEUE: " + PirateQueue );
 	  System.out.println( PirateQueue.dequeue() );
-	  System.out.println( PirateQueue );
+	  System.out.println( "QUEUE: " + PirateQueue );
 	  System.out.println( PirateQueue.dequeue() );
-	  System.out.println( PirateQueue );
+	  System.out.println( "QUEUE: " + PirateQueue );
 	  
 	  System.out.println("\nnow dequeuing fr empty queue..."); 
 	  System.out.println( PirateQueue.dequeue() );
+	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     }//end main
 
