@@ -397,3 +397,36 @@ Transcription and translation in prokaryotic cells
 	1 - initiation
 	2 - elongation
 	3 - termination
+	
+-=-=4/5/17=-=-
+The 3 steps in translation
+	during translation, mRNA, tRNA, and ribosomes cooperate to synthesize proteins
+	1 - initiation 
+		start codon "AUG" codes methionine (5')
+	2 - elongation
+		codon-anticodon recognition
+		catalytic site of large subnit breaks bond b/w tRNA and amino acid, for new peptide bond b/w amino acid and the growing polypeptide
+	3 - termination
+		stop codons (UAG, UAA, UGA)
+	tRNA
+		transfer amino acids
+		
+***need to know the regulation of gene expression at different levels
+	transcription, mRNA processing, translation, modification, degradation
+
+Controlling of development
+	control which genes are transcribed into mRNA by the transcription factors
+	maternal mRNA and protein deposit in the egg
+	cell-embryo chemical communication
+Duplication of HOX genes
+	HOX play a major role in embryonic development
+		vertebrates have four sets
+		jawless vertebrates have two sets
+		invertebrates and amphioxus have only one
+Zygote development
+	oviparous
+		female laid eggs contain yolk for nutrition needed for embryonic development
+	ovoviviparous
+		eggs hatch and baby develop inside the female's body but there is no placenta to nourish the pups
+	viviparous
+		eggs hatch inside the female's body and baby is fed by a placenta, transfer nourishment from mother to baby
