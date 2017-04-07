@@ -430,3 +430,12 @@ Zygote development
 		eggs hatch and baby develop inside the female's body but there is no placenta to nourish the pups
 	viviparous
 		eggs hatch inside the female's body and baby is fed by a placenta, transfer nourishment from mother to baby
+		
+-=-=4/7/17=-=-
+Mendel's Three Laws
+	Law of dominance
+		two diff alleles are present in an organism
+	Law of segregation
+		pairs of alleles on homologous chromosomes separate from each other in meiosis
+	Law of independent assortment
+		
