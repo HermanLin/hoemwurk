@@ -439,3 +439,44 @@ Mendel's Three Laws
 		pairs of alleles on homologous chromosomes separate from each other in meiosis
 	Law of independent assortment
 		
+-=-=4/20/17=-=-
+Complete dominance 
+	monohybrid
+		purple flower = PP, Pp 	 
+		white flower = pp	
+	dihybrid
+		2 genes located on different chromosomes
+Incomplete dominance
+	the phenotype of the heterozygotes is intermediate between the phenotypes of the homozygotes
+	red CrCr
+	pink CrCw
+	white CwCw
+Traits with multiple alleles - ABO blood type
+	A - AA or Ao, get A or O, give A or AB
+	B - BB or Bo, get B or O, give B or AB
+	AB - AB, get AB/A/B/O, give AB
+	O - oo, get O, give AB/A/B/O
+Sex-linked gene (ex. color blindness and hemophilia)
+	female
+		homozygous
+		heterozygous
+	male
+		hemizygous
+	life essential genes are usually located on X chromosome
+Pedigrees
+	dominant = in every generation
+	recessive = if skips a generation
+	sex-linked = if more males have 
+Polygenic (more than one gene involved, can be affected by environment)
+	skin color
+Gene linkage
+	genes on the same chromosome tend to be inherited together
+Nondisjunction during meiosis
+	if something happens in meiosis 1 or 2
+		one too many or one too few chromosomes
+	majority of nondisjunction will produce useless gametes
+		chromosome 21 is involved in Down Syndrome
+Nondisjunction caused aneuploidy
+	an egg carrying no X chromosome or one egg carrying 2 X chromosomes
+	monosomic (2n-1) or trisomic (2n+1)
+	
