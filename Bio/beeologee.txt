@@ -479,4 +479,12 @@ Nondisjunction during meiosis
 Nondisjunction caused aneuploidy
 	an egg carrying no X chromosome or one egg carrying 2 X chromosomes
 	monosomic (2n-1) or trisomic (2n+1)
-	
+
+-=-=4/21/17=-=-
+X inactivatiion in mammals
+	calico cat only for females
+	B = dominant allele for black
+	Y = recessive allele for yellow 
+	XB & XY = inactive alleles on condensed chromosomes
+Epistasis
+	one gene's product can affect another gene's production
