@@ -488,3 +488,7 @@ X inactivatiion in mammals
 	XB & XY = inactive alleles on condensed chromosomes
 Epistasis
 	one gene's product can affect another gene's production
+	
+-=-=4/25/17=-=-
+Biotechnology and its applications
+PCR (DNA Polymerase Chain Reaction) copies a specific DNA sequence
