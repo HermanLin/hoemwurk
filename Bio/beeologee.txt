@@ -507,3 +507,7 @@ Using biotech in forensics
 	short tandem repeats (STRs) can be used to identify people
 		consists of 2-5 nycleotides repeated (5-50 times), in tandems
 		
+-=-=4/28/17=-=-
+From acquired immunity to genome editing
+	CRISPR/Cas9
+		gene therapy, genome editing
