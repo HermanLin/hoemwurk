@@ -374,6 +374,8 @@ Independent assortment in meiosis
 		each pair of chromosomes independently aligns at the cell equator
 		equal probability of maternal/paternal chomosome facing a given pole
 Random mating
+<<<<<<< HEAD
+=======
 
 -=-=3/29/17=-=-
 Various strategies of sexual reproduction
@@ -511,3 +513,4 @@ Using biotech in forensics
 From acquired immunity to genome editing
 	CRISPR/Cas9
 		gene therapy, genome editing
+>>>>>>> fc5c81b2789673b1bfa86e95857d58660752d1f3
