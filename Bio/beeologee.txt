@@ -514,3 +514,13 @@ From acquired immunity to genome editing
 	CRISPR/Cas9
 		gene therapy, genome editing
 
+-=-=5/2/17=-=-
+Evolution
+	Origin of Life
+		spontaneous generation refuted by Louis Pasteur and John Tyndall in mid-1800s
+	Early earth made the origin of life possible
+		chemical conditions + physical conditions
+			stage1 = abiotic synthesis of monomers
+			stage2 = formation of polymers
+			stage3 = packaging of polymers into protobionts
+			stage4 = self replication
