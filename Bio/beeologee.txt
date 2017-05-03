@@ -480,7 +480,7 @@ Nondisjunction caused aneuploidy
 	an egg carrying no X chromosome or one egg carrying 2 X chromosomes
 	monosomic (2n-1) or trisomic (2n+1)
 
--=-=4/21/17=-=-
+-=-=4/21/17
 X inactivatiion in mammals
 	calico cat only for females
 	B = dominant allele for black
