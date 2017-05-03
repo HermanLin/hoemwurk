@@ -374,3 +374,143 @@ Independent assortment in meiosis
 		each pair of chromosomes independently aligns at the cell equator
 		equal probability of maternal/paternal chomosome facing a given pole
 Random mating
+<<<<<<< HEAD
+=======
+
+-=-=3/29/17=-=-
+Various strategies of sexual reproduction
+	unicellular organisms spend most of their life in haploid life cycles
+	plants have alternation of generations (haploid gametophyte alternates with a diploid sporophyte generation)
+	many fungal species can reproduce sexually/asexually
+	most animals perform sexual reproduction (exceptions: budding, regenerative, parthenogenesis, hermaphrodites)
+Plants have adaptations for life on land
+	life on land = unlimited sunlight, abundant CO2, initially few pathogens/herbivores
+	challenges
+		maintaining moisture within cells
+		obtaining resources from soil and air
+		supporting body in air
+		reproducing and dispersing offspring without water
+
+-=-=3/30/17=-=-
+How can we convert genetic information to proteins
+	ribosomes, mRNA/tRNA, endoplasmic reticulum, 
+Transcription and translation in prokaryotic cells
+	transcription
+	1 - initiation
+	2 - elongation
+	3 - termination
+	
+-=-=4/5/17=-=-
+The 3 steps in translation
+	during translation, mRNA, tRNA, and ribosomes cooperate to synthesize proteins
+	1 - initiation 
+		start codon "AUG" codes methionine (5')
+	2 - elongation
+		codon-anticodon recognition
+		catalytic site of large subnit breaks bond b/w tRNA and amino acid, for new peptide bond b/w amino acid and the growing polypeptide
+	3 - termination
+		stop codons (UAG, UAA, UGA)
+	tRNA
+		transfer amino acids
+		
+***need to know the regulation of gene expression at different levels
+	transcription, mRNA processing, translation, modification, degradation
+
+Controlling of development
+	control which genes are transcribed into mRNA by the transcription factors
+	maternal mRNA and protein deposit in the egg
+	cell-embryo chemical communication
+Duplication of HOX genes
+	HOX play a major role in embryonic development
+		vertebrates have four sets
+		jawless vertebrates have two sets
+		invertebrates and amphioxus have only one
+Zygote development
+	oviparous
+		female laid eggs contain yolk for nutrition needed for embryonic development
+	ovoviviparous
+		eggs hatch and baby develop inside the female's body but there is no placenta to nourish the pups
+	viviparous
+		eggs hatch inside the female's body and baby is fed by a placenta, transfer nourishment from mother to baby
+		
+-=-=4/7/17=-=-
+Mendel's Three Laws
+	Law of dominance
+		two diff alleles are present in an organism
+	Law of segregation
+		pairs of alleles on homologous chromosomes separate from each other in meiosis
+	Law of independent assortment
+		
+-=-=4/20/17=-=-
+Complete dominance 
+	monohybrid
+		purple flower = PP, Pp 	 
+		white flower = pp	
+	dihybrid
+		2 genes located on different chromosomes
+Incomplete dominance
+	the phenotype of the heterozygotes is intermediate between the phenotypes of the homozygotes
+	red CrCr
+	pink CrCw
+	white CwCw
+Traits with multiple alleles - ABO blood type
+	A - AA or Ao, get A or O, give A or AB
+	B - BB or Bo, get B or O, give B or AB
+	AB - AB, get AB/A/B/O, give AB
+	O - oo, get O, give AB/A/B/O
+Sex-linked gene (ex. color blindness and hemophilia)
+	female
+		homozygous
+		heterozygous
+	male
+		hemizygous
+	life essential genes are usually located on X chromosome
+Pedigrees
+	dominant = in every generation
+	recessive = if skips a generation
+	sex-linked = if more males have 
+Polygenic (more than one gene involved, can be affected by environment)
+	skin color
+Gene linkage
+	genes on the same chromosome tend to be inherited together
+Nondisjunction during meiosis
+	if something happens in meiosis 1 or 2
+		one too many or one too few chromosomes
+	majority of nondisjunction will produce useless gametes
+		chromosome 21 is involved in Down Syndrome
+Nondisjunction caused aneuploidy
+	an egg carrying no X chromosome or one egg carrying 2 X chromosomes
+	monosomic (2n-1) or trisomic (2n+1)
+
+-=-=4/21/17=-=-
+X inactivatiion in mammals
+	calico cat only for females
+	B = dominant allele for black
+	Y = recessive allele for yellow 
+	XB & XY = inactive alleles on condensed chromosomes
+Epistasis
+	one gene's product can affect another gene's production
+	
+-=-=4/25/17=-=-
+Biotechnology and its applications
+PCR (DNA Polymerase Chain Reaction) copies a specific DNA sequence
+
+-=-=4/27/17=-=-
+QUIZ
+- PCR
+- Restriction enzymes
+- Bacteria transformation
+- Recombinant DNA technology
+- gel electro phoresis
+- RFLP
+
+Aim: What types of bio-tech are available and how can we apply them to our daily life?
+Using biotech in forensics
+	short tandem repeats (STRs) can be used to identify people
+		consists of 2-5 nycleotides repeated (5-50 times), in tandems
+		
+-=-=4/28/17=-=-
+From acquired immunity to genome editing
+	CRISPR/Cas9
+		gene therapy, genome editing
+>>>>>>> fc5c81b2789673b1bfa86e95857d58660752d1f3
