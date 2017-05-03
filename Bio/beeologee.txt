@@ -513,4 +513,4 @@ Using biotech in forensics
 From acquired immunity to genome editing
 	CRISPR/Cas9
 		gene therapy, genome editing
->>>>>>> fc5c81b2789673b1bfa86e95857d58660752d1f3
+
