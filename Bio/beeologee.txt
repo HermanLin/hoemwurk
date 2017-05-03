@@ -366,3 +366,11 @@ Oogenesis
 	each month about one primary oocyte resumes meiosis
 	a secondary oocyte arrested at metaphase of meiosis II is ovulated
 	meiosis of the ovum is completed after fertilization
+
+-=-=3/23/27=-=-
+Crossing over
+Independent assortment in meiosis
+	independent orientation at metaphase I
+		each pair of chromosomes independently aligns at the cell equator
+		equal probability of maternal/paternal chomosome facing a given pole
+Random mating
