@@ -488,3 +488,26 @@ X inactivatiion in mammals
 	XB & XY = inactive alleles on condensed chromosomes
 Epistasis
 	one gene's product can affect another gene's production
+	
+-=-=4/25/17=-=-
+Biotechnology and its applications
+PCR (DNA Polymerase Chain Reaction) copies a specific DNA sequence
+
+-=-=4/27/17=-=-
+QUIZ
+- PCR
+- Restriction enzymes
+- Bacteria transformation
+- Recombinant DNA technology
+- gel electro phoresis
+- RFLP
+
+Aim: What types of bio-tech are available and how can we apply them to our daily life?
+Using biotech in forensics
+	short tandem repeats (STRs) can be used to identify people
+		consists of 2-5 nycleotides repeated (5-50 times), in tandems
+		
+-=-=4/28/17=-=-
+From acquired immunity to genome editing
+	CRISPR/Cas9
+		gene therapy, genome editing
