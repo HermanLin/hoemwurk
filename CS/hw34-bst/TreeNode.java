@@ -32,7 +32,7 @@ public class TreeNode
     {
 	value = initValue;
 	left = initLeft;
-	right = intiRight;
+	right = initRight;
     }
  
 
