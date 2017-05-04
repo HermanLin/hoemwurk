@@ -524,3 +524,11 @@ Evolution
 			stage2 = formation of polymers
 			stage3 = packaging of polymers into protobionts
 			stage4 = self replication
+			
+-=-=5/4/17=-=-
+The RNA World and The Endosymbiont Hypothesis
+	free nucleotides
+	nucleotides made by rRNA
+	catalyze
+Darwin's Finches and Natural Selection
+	
