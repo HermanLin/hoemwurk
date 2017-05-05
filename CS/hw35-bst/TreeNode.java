@@ -88,5 +88,11 @@ public class TreeNode
     {
 	value = theNewValue;
     }
- 
+
+    /**********
+     *toString
+    public String toString() {
+	return value + "";
+    }
+     **********/
 }//end class

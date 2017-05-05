@@ -120,9 +120,20 @@ public class BST
      *****************************************************/
     TreeNode search( int target )
     {
-    	/*** YOUR IMPLEMENTATION HERE ***/
+	return searchHelper(root, target);
     }
-
+    TreeNode searchHelper( TreeNode currentNode, int target ) {
+	TreeNode answer = null;
+	if (currentNode == null)
+	    return null;
+	else if (currentNode.getValue() == target)
+	    return currentNode;
+	else if (currentNode.getValue() > target)
+	    answer = searchHelper(currentNode.getLeft(), target);
+	else if (currentNode.getValue() < target)
+	    answer = searchHelper(currentNode.getRight(), target);
+	return answer;
+    }
 
     /*****************************************************
      * int height()
@@ -131,19 +142,36 @@ public class BST
      *****************************************************/
     public int height()
     {
-    	/*** YOUR IMPLEMENTATION HERE ***/
+	return findHeight(root);
     }
-
-
+    public int findHeight( TreeNode currentNode ) {        
+	int leftTree = 0;
+	int rightTree = 0;
+	if (currentNode == null)
+	    return 0;
+	else {
+	    leftTree = findHeight(currentNode.getLeft());
+	    rightTree = findHeight(currentNode.getRight());
+	    return 1 + Math.max(leftTree, rightTree);
+	}
+    }
+    
     /*****************************************************
      * int numLeaves()
      * returns number of leaves in tree
      *****************************************************/
     public int numLeaves()
     {
-    	/*** YOUR IMPLEMENTATION HERE ***/
+	return findLeaves(root);
     }
-
+    public int findLeaves( TreeNode currentNode ) {
+	if (currentNode == null)
+	    return 0;
+	else if ((currentNode.getLeft() == null) && (currentNode.getRight() == null))
+	    return 1;
+	else 
+	    return findLeaves(currentNode.getLeft()) + findLeaves(currentNode.getRight());
+    }
 
 
 
@@ -171,23 +199,23 @@ public class BST
 	  System.out.println( "\n\npost-order traversal:" );
 	  System.out.println( "expected traversal: 132654" );
 	  arbol.postOrderTrav();	
+	  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 	  //insert your new test calls here...
-	  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	  System.out.println( "\n\n\nsearching for..." );
-	  System.out.println( "3: " + search(3) ); //return TreeNode
-	  System.out.println( "5: " + search(5) ); //return TreeNode
-	  System.out.println( "7: " + search(7) ); //return null
+	  System.out.println( "3: " + arbol.search(3) ); //return TreeNode
+	  System.out.println( "5: " + arbol.search(5) ); //return TreeNode
+	  System.out.println( "7: " + arbol.search(7) ); //return null
 
-	  System.out.println( "\n\nheight of tree: " + height() ); //3
+	  System.out.println( "\n\nheight of tree: " + arbol.height() ); //3
 	  System.out.println( "inserting a leaf of 7..." );
 	  arbol.insert( 7 ); 
-	  System.out.println( "\n\nheight of tree: " + height() ); //4
+	  System.out.println( "height of tree: " + arbol.height() ); //4
 
-	  System.out.println( "\n\nnumber of 
+	  System.out.println( "\n\nnumber of leaves: " + arbol.numLeaves() );
 	  System.out.println( "inserting a leaf of 0..." );
 	  arbol.insert( 0 );
-	  System.out.println( "\n\nnumber of leaves: " + numLeaves() );
+	  System.out.println( "number of leaves: " + arbol.numLeaves() );
     }
 
 }//end class
