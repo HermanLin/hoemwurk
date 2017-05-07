@@ -131,22 +131,30 @@ public class BST
      *****************************************************/
     public TreeNode remove( int remVal )
     {
-	TreeNode leader = _root;  
+	TreeNode leader = _root; 
 	TreeNode follower = null; //piggybacker
 
 	//first, walk leader down to target node w/ follower trailing...
-	while (leader != remVal) {
-	    
+	while (leader.getValue() != remVal) {
+	    follower = leader;
+	    if (follower.getLeft() != null) 
+		leader = follower.getLeft();
+	    else if (follower.getRight() != null)
+		leader = follower.getRight();
 	}
 	
 	//CASE 1: removal node is a leaf
 	//action: snip it
 	if ( isLeaf(leader) ) {
 	    //subcase: 1-node tree
-	    leader = null;
-	    
+	    if (leader == _root) 
+		_root = null;	      	    
 	    //subcase: removal node is a left child
+	    else if (leader.getValue() == follower.getLeft().getValue())
+		follower.setLeft(null);
 	    //subcase: removal node is a right child
+	    else if (leader.getValue() == follower.getRight().getValue());
+		follower.setRight(null);	    
 	}
 
 	//CASE 2: removal node has 1 subtree
@@ -155,7 +163,7 @@ public class BST
 	    //subcase: removal node is root
 	    
 	    //subcase: removal node is a left child
-
+	    else if (follower.getLeft() == 
 	    //subcase: removal node is a right child
 
 	}
