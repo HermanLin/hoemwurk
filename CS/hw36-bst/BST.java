@@ -199,26 +199,42 @@ public class BST
 	//action: overwrite removal node value with max value in left subtree
 	//        (deepest node with no right child), then remove that node, 
 	//        promoting its left child if exists
-	else {
-            TreeNode maxLST = leader.getLeft();
-            while( maxLST.getRight() != null ) {
+	else {            
+	    TreeNode maxLST = leader.getLeft();
+	    while( maxLST.getRight() != null ) {
 		maxLST = maxLST.getRight();
-            }
-
-	    //create replacement node for removal node
-            TreeNode tmp = new TreeNode( maxLST.getValue() );
-            tmp.setLeft( leader.getLeft() );
-            tmp.setRight( leader.getRight() );
+	    }
 	    
-            remove( maxLST.getValue() );
-	    _root = tmp;
+	    //create replacement node for removal node
+	    TreeNode tmp = new TreeNode( maxLST.getValue() );
+	    tmp.setLeft( leader.getLeft() );
+	    tmp.setRight( leader.getRight() );
+	    
+	    remove( maxLST.getValue() );
 	    
 	    //subcase: removal node is root
-
+	    if (leader == _root) {
+		_root = tmp;
+	    }
 	    //subcase: removal node is a left child
-		
+	    else if (leader == follower.getLeft()) {		
+		follower.setLeft(tmp);
+	    }
 	    //subcase: removal node is a right child
-
+	    else {
+		TreeNode maxRST = leader.getRight();
+		while( maxRST.getLeft() != null ) {
+		    maxRST = maxRST.getLeft();
+		}
+	    
+		//create replacement node for removal node
+		TreeNode tmp1 = new TreeNode( maxRST.getValue() );
+		tmp1.setLeft( leader.getLeft() );
+		tmp1.setRight( leader.getRight() );
+	    
+		remove( maxRST.getValue() );
+		follower.setRight(tmp1);
+	    }
 	}
 	return leader;
     }//end remove()
@@ -388,24 +404,58 @@ public class BST
 	System.out.println();
 	System.out.println( arbol );
 
+
+
+	BST timber = new BST();
+	    
 	//inserting in this order will build a perfect tree
-	arbol.insert( 3 );
-	arbol.insert( 1 );
-	arbol.insert( 0 );
-	arbol.insert( 2 );
-	arbol.insert( 5 );
-	arbol.insert( 4 );
-	arbol.insert( 6 );    
+	timber.insert( 3 );
+	timber.insert( 1 );
+	timber.insert( 0 );
+	timber.insert( 2 );
+	timber.insert( 5 );
+	timber.insert( 4 );
+	timber.insert( 6 );    
 
 	//testing CASE 3	
 	System.out.println();
-	System.out.println("Testing CASE 3...\n");
-	System.out.println( arbol );
+	System.out.println("Testing CASE 3 (root)...\n");
+	System.out.println( timber );
        
-	arbol.remove(3);	
+	timber.remove(3);	
 	System.out.println();
 	System.out.println("Removing TreeNode 3...\n");
-	System.out.println( arbol );
+	System.out.println( timber );
+
+
+
+
+	BST sapling = new BST();
+	sapling.insert( 6 );
+	sapling.insert( 8 );
+	sapling.insert( 7 );
+	sapling.insert( 9 );
+	sapling.insert( 4 );
+	sapling.insert( 5 );
+	sapling.insert( 3 );
+	sapling.insert( 1 );
+	sapling.insert( 2 );
+	sapling.insert( 0 );
+
+	//testing CASE 3
+	System.out.println();
+	System.out.println("Testing CASE 3 (non-root)...\n");
+	System.out.println( sapling );
+       
+	sapling.remove(4);	
+	System.out.println();
+	System.out.println("Removing TreeNode 4...\n");
+	System.out.println( sapling );
+
+	sapling.remove(8);
+	System.out.println();
+	System.out.println("Removing TreeNode 8...\n");
+	System.out.println( sapling );
 	/*~~~~~~~~~~~~move~me~down~~~~~~~~~~~~~~~~~~~~~~
 	  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     }//end main
