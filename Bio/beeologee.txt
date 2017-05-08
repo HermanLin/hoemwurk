@@ -547,3 +547,37 @@ How do life forms change and adapt?
 		circular DNA
 		ribosomes
 		DNA polymerases
+		
+-=-=5/8/17=-=-
+TEST#4
+- ch17 What is the origin of life? (do not need to know plant evolution, catastrophes?, human evolution)
+- ch15 What is the evidence populations evolve by natural selection?
+- 
+- 
+
+flora = plants
+funa = animals
+
+Galapagos Endemics
+	animals live there that are found nowhere else on earth
+		makes them endemic
+		finches - 13 species
+	natural laboratory where evolution can be observed
+Implications
+	terrestrial species on islands not many relatives nearby
+	neighboring islands will have close relatives
+		new terrestrial species wont arrive from south american mainland very often
+		most of island species had plenty time to differentiate from nearby living relatives
+	very little gene flow between the islands and the mainland
+How does natural selection worksheet
+	modifies populations over time
+		acts on individuals within a population
+		population changes as the percentage of individuals inheriting favorable traits increases
+		an individual cannot evolve but a population can
+Conditions necessary for natural selection
+	inheritable variation in a population
+	overproduction of offspring
+	limited resources (or environmental pressures, such as predation)
+	
+	evolution is not inducible
+		anti-HIV drugs cannot create drug resistance in the viruss
