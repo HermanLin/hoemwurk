@@ -205,12 +205,12 @@ public class BST
 		maxLST = maxLST.getRight();
 	    }
 	    
+	    remove( maxLST.getValue() );
 	    //create replacement node for removal node
 	    TreeNode tmp = new TreeNode( maxLST.getValue() );
 	    tmp.setLeft( leader.getLeft() );
 	    tmp.setRight( leader.getRight() );
 	    
-	    remove( maxLST.getValue() );
 	    
 	    //subcase: removal node is root
 	    if (leader == _root) {
@@ -227,12 +227,12 @@ public class BST
 		    maxRST = maxRST.getLeft();
 		}
 	    
+		remove( maxRST.getValue() );
 		//create replacement node for removal node
 		TreeNode tmp1 = new TreeNode( maxRST.getValue() );
 		tmp1.setLeft( leader.getLeft() );
 		tmp1.setRight( leader.getRight() );
 	    
-		remove( maxRST.getValue() );
 		follower.setRight(tmp1);
 	    }
 	}
