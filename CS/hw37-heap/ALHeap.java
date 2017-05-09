@@ -15,7 +15,7 @@ public class ALHeap
      *****************************************************/
     public ALHeap() 
     { 
-	_heap = new ArrayList<Integer>;
+	_heap = new ArrayList<Integer>();
     }
 
 
@@ -28,7 +28,10 @@ public class ALHeap
      *****************************************************/
     public String toString() 
     { 
-	
+	String array = "| ";
+	for (int i: _heap)
+	    array += i + " | ";
+	return array;
     }//O(?)
 
 
@@ -63,7 +66,16 @@ public class ALHeap
      *****************************************************/
     public void add( Integer addVal ) 
     { 
+	_heap.add(addVal);
+
+	int parentIndex = (_heap.size() - 1) / 2;
+	int childIndex = _heap.size() - 1;
 	
+	while (_heap.get(parentIndex) > _heap.get(childIndex)) {
+	    swap(childIndex, parentIndex);
+	    childIndex = parentIndex;
+	    parentIndex = (childIndex - 1) / 2;
+	}
     } //O(?)
 
 
@@ -75,7 +87,16 @@ public class ALHeap
      *****************************************************/
     public Integer removeMin() 
     {
-
+	int minVal = _heap.get(0);
+	_heap.set(0, _heap.get(_heap.size() - 1));
+	for (int i = 0; i < _heap.size(); i++) {
+	    int parent = _heap.get(i);
+	    int minChild = minChildPos(i);
+	    if (minChild != -1) {
+		swap(parent, minChild);
+	    }
+	}
+	return minVal;
     }//O(?)
 
 
@@ -88,7 +109,18 @@ public class ALHeap
      *****************************************************/
     private int minChildPos( int pos ) 
     {
-
+	if (((2 * pos) + 1) > (_heap.size() - 1) ||
+	    ((2 * pos) + 2) > (_heap.size() - 1))
+	    return -1;
+	else {
+	    int aVal = _heap.get((2 * pos) + 1);
+	    int bVal = _heap.get((2 * pos) + 2);
+	    int min = minOf(aVal, bVal);
+	    if (min == aVal)
+		return (2 * pos) + 1;
+	    else
+		return (2 * pos) + 2;
+	}
     }//O(?)
 
 
@@ -114,7 +146,6 @@ public class ALHeap
     //main method for testing
     public static void main( String[] args ) {
 
-	/*--V--------------MOVE ME DOWN------------------V---
 
 	  ALHeap pile = new ALHeap();
 
@@ -162,6 +193,7 @@ public class ALHeap
 	  System.out.println("removing " + pile.removeMin() + "...");
 	  System.out.println(pile);
 
+	/*--V--------------MOVE ME DOWN------------------V---
 	  ==|============================================|===*/
 
     }//end main()
