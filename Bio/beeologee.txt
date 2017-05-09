@@ -580,4 +580,19 @@ Conditions necessary for natural selection
 	limited resources (or environmental pressures, such as predation)
 	
 	evolution is not inducible
-		anti-HIV drugs cannot create drug resistance in the viruss
+		anti-HIV drugs cannot create drug resistance in the virus
+		
+-=-=5/9/17=-=-
+Evidences to suport evolution theory
+	fossils
+	comparative anatomy (study oof body sctructures)
+	embryology (study of organisms from fertilization to birth)
+	biochemistry
+	genetics
+Patterns of evolution
+	divergent evolution
+		homology
+		shared ancestry
+		vestigial structures
+	convergent evolution
+		similar environmental pressures
