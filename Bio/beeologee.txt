@@ -596,3 +596,13 @@ Patterns of evolution
 		vestigial structures
 	convergent evolution
 		similar environmental pressures
+		
+-=-=5/10/17=-=-
+Gradualism
+	species evolve due to the accumulation of many small changes through a long period of time
+Punctuated equilibrium
+	species accumulate many neutral mutations which do not lead to change of phenotypes for a long time
+	evolve rapidly when frequencies of certain phenotypes are changed significantly
+Evolution
+	a change in the frequency of an allele
+		an allele for beak depth
