@@ -68,11 +68,11 @@ public class ALHeap
     { 
 	_heap.add(addVal);
 
-	int parentIndex = (_heap.size() - 1) / 2;
+	int parentIndex = (_heap.size() - 2) / 2;
 	int childIndex = _heap.size() - 1;
-	
-	while (_heap.get(parentIndex) > _heap.get(childIndex)) {
-	    swap(childIndex, parentIndex);
+
+	while (_heap.get(parentIndex) > _heap.get(childIndex)) {	    
+	    swap(childIndex, parentIndex); //heapify
 	    childIndex = parentIndex;
 	    parentIndex = (childIndex - 1) / 2;
 	}
@@ -85,17 +85,25 @@ public class ALHeap
      * Removes and returns least element in heap.
      * Postcondition: Tree maintains heap property.
      *****************************************************/
-    public Integer removeMin() 
+    public Integer removeMin()       
     {
+	if (_heap.isEmpty())
+	    return -1;
+	
 	int minVal = _heap.get(0);
-	_heap.set(0, _heap.get(_heap.size() - 1));
-	for (int i = 0; i < _heap.size(); i++) {
-	    int parent = _heap.get(i);
-	    int minChild = minChildPos(i);
-	    if (minChild != -1) {
-		swap(parent, minChild);
-	    }
+        _heap.set(0, _heap.get(_heap.size() - 1));
+	
+	int parentIndex = 0;
+	int smallPos = minChildPos(parentIndex);
+
+	while (smallPos != -1) {
+	    swap(parentIndex, smallPos); //heapify
+
+	    parentIndex = smallPos;
+	    smallPos = minChildPos(parentIndex);
 	}
+	
+	_heap.remove(_heap.size() - 1);
 	return minVal;
     }//O(?)
 
