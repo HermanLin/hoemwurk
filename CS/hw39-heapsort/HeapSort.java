@@ -1,7 +1,7 @@
 /*Herman Lin
-APCS2 - pd3
-HW39 -- Heaping Piles of Sordidness
-2017-5-10*/
+  APCS2 - pd3
+  HW39 -- Heaping Piles of Sordidness
+  2017-5-10*/
 
 
 import java.util.ArrayList;
@@ -13,66 +13,66 @@ public class HeapSort {
       1) heapifty input ArrayList into a max heap
       2) move heap[0] to the end by swapping with the value at heap[size-1]
       3) heapify the rest of the heap
-     */
-    public static ArrayList<Integer> sort (ArrayList<Integer> array) {
-
-	int parentIndex = (array.size() - 2) / 2;
-	int childIndex = array.size() - 1;
-	
-	for (int i = 0; i < array.size() - 1; i ++) {
-	    while (array.get(parentIndex) < array.get(childIndex)) {
-		int max = maxChildPos(
-		swap(array, childIndex, parentIndex);
+    */
+    public static void sort( int[] arr ) {
+	for (int i = 0; i < arr.length; i ++) {
+	    int pos = i;
+	    while (arr[pos] > arr[(pos - 1) / 2]) {
+		swap((pos - 1) / 2, pos, arr);
+		pos = (pos - 1) / 2;
 	    }
-	    childIndex = parentIndex;
-	    parentIndex = (childIndex - 1) / 2;
 	}
-	return array;
+	for (int i = arr.length - 1; i > 0; i --) {
+	    int big = arr[0];
+	    arr[0] = arr[i];
+	    int pos = 0;
+	    while(maxChildPos(pos, i, arr) != -1 && arr[pos] < arr[maxChildPos(pos, i, arr)]) {
+		int mcp = maxChildPos(pos, i, arr);
+		swap(pos, mcp, arr);
+		pos = mcp;
+	    }
+	    arr[i] = big;
+	}
     }
 
-    //=======HELPER METHODS=======
-    private Integer minOf( Integer a, Integer b ) 
-    {
-	if ( a.compareTo(b) < 0 )
-	    return a;
-	else
-	    return b;
-    }
-
-    private int maxChildPos( int pos, int last, ArrayList arr ) 
-    {
-	if (((2 * pos) + 1) > (last - 1) ||
-	    ((2 * pos) + 2) > (last - 1))
+    private static int maxChildPos( int pos, int last, int[] arr ) {
+        if (pos < 0 || pos >= last || (pos * 2) + 1 >= last)
 	    return -1;
-	else {
-	    int aVal = arr.get((2 * pos) + 1);
-	    int bVal = arr.get((2 * pos) + 2);
-	    int min = minOf(aVal, bVal);
-	    
-	    if (min == bVal)
-		return (2 * pos) + 1;
-	    else
-		return (2 * pos) + 2;
-	}
-    }   
-
-    public static void swap ( ArrayList arr, int pos1, int pos2 ) {
-	arr.set(pos1, array.set(pos2, arr.get(pos1)));
+        if ((pos * 2) + 2 >= last)
+	    return (pos * 2) + 1;
+        if (arr[(pos * 2) + 1] > arr[(pos * 2) + 2])
+	    return (pos * 2) + 1; 
+        return (pos * 2) + 2;
     }
-    //============================
 
-    public static void main (String[] args) {
+    public static void swap( int x, int y, int[] arr ) {
+	int temp = arr[x];
+	arr[x] = arr[y];
+	arr[y] = temp;
+    }
 
-	ArrayList<Integer> heep = new ArrayList<Integer>();
+    public static void printArr( int[] arr ) {	
+	for ( int z : arr )
+	    System.out.print( z + " " );
+	System.out.println();
+    }
 
-	for (int i = 0; i < 10; i++) {
-	    int rand = (int)(Math.random() * 100);
-	    while (heep.contains(rand))
-		rand = (int)(Math.random() * 100);
-	    heep.add(rand);
-	}
+    public static int[] randArr(int length) {
+        int[] arr = new int[length];
+        for (int i = 0; i < arr.length; i ++)
+	    arr[i] = (int)(Math.random() * 100); 
+        return arr;
+    }
 
-	System.out.println("Random Array of Ints: " + heep);
-	System.out.println("Heapified Array: " + sort(heep));
+    public static void main(String[] args) {
+        int[] heep = randArr(10);
+	
+        System.out.println("Unsorted Array...");
+        printArr(heep);
+	
+        sort(heep);
+	
+        System.out.println("Sorted Array...");
+        printArr(heep);
     }
 }
