@@ -606,3 +606,40 @@ Punctuated equilibrium
 Evolution
 	a change in the frequency of an allele
 		an allele for beak depth
+		
+-=-=5/12/17=-=-
+How do organisms evolve?
+	natural selection
+		individuals differ in their survival and reproductive success
+		natural selection will alter allele frequences
+	genetic drift
+		chance event
+			change in gene pool of a pop. due to chance
+		small pop., chance events may lead to loss of genetic diversity
+	gene flow
+		movement of individuals or gametes/spores between pop.
+		cross breed = can alter allele frequencies in a population
+Modes of natural selection
+	stabilizing selection
+	directional selection
+	distruptive selection
+Sexual selection
+	sexual dimorphism = different appearance in male and female
+	intrasexual competition = competition for mates, usually between males
+	intersexual competition = individuals choose mates, usually between females
+Genetic drift
+	bottleneck effect = loss of genetic diversity when pop. is greatly reduced
+		northern elephat seal hunted to near extinction
+		fewer than 100 seals left, try to protect them
+		no genetic diversity in the seals 
+	founder effect = few individuals colonize a new habitat
+		smalller the group, the more different the gene pool of the new pop. will be from the gene pool of original pop.
+Hardy-Weinberg equation
+	p^2 + 2pq + q^2 = 1
+	hardy weinberg principle staes that allele and genotype frequencies within a sexually reproducing diploid pop. will remain in equilibrium unless outside forces act to change those frequencies
+	to achieve equilibrium
+		no mutations
+		random mating
+		no natural selection
+		extremely large population size
+		no gene flow
