@@ -640,6 +640,6 @@ Hardy-Weinberg equation
 	to achieve equilibrium
 		no mutations
 		random mating
-		no natural selection
 		extremely large population size
-		no gene flow
+		no natural selection
+		no gene flowb
