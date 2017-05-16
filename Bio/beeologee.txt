@@ -642,4 +642,31 @@ Hardy-Weinberg equation
 		random mating
 		extremely large population size
 		no natural selection
-		no gene flowb
+		no gene flow
+		
+-=-=5/16/17=-=-
+How do new species form?
+	microevolution 
+	morphological - look the same?
+	ecological - live in same climates? eat similar foods?
+	behavioral - same mating call/dance? 
+Speciation
+	the biological species' concept is based on interfertility rather than physical similarity
+Reproductive isolation
+	prezygotic barriers
+		habitat isolation - species live in same area but occupy different habitats, rarely encounter each other
+		behavioral isolation - signas that attract mates are often unique to a species
+			e.g., different species of fireflies flash different patterns
+		temporal isolation - species breed at different times of the day or during different seasons
+		mechanical isolation - closely related species attempt to mate but are anatomically incompatable
+			e.g., flowering plants with pollination barriers
+			e.g., some plants are specific with respect to the insect pollinator, often occurs with butterflies/moths
+	postzygotic barriers
+		reduced hybrid viability - abort development of hybrid at some embryonic stage
+		reduced hybrid fertility - meiosis doesnt produce fertile gametes in vigorous hybrids
+			e.g., donkey + horse = mule (sterile hybrid)
+Speciation and geographic separation
+	allopatric speciation - geographically isolated
+	sympatric speciation - small pop. becomes new species without geographic isolation
+Haploid gametes from two different species combine to produce a sterile hybrid
+	chromosomes are not homologous, cannot pair up
