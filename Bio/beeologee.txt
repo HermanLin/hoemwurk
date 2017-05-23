@@ -673,3 +673,31 @@ Haploid gametes from two different species combine to produce a sterile hybrid
 	
 -=-=5/23/17=-=-
 Population and Community Ecology
+	pop. ecology 
+		changes in pop size
+		factors (abiotic vs biotic) that regulate populations over time
+	helps explain the biodiversity of an environment
+	
+	population density = # of individuals in a give area of volume	
+		count all individuals in a population
+		estimate by sampling
+Population growth rate is affect by
+	how fast a given population grows
+		natality
+		mortality
+		emigration
+		immigration
+	factors affecting pop growth
+		density independent (abiotic)
+		density dependent (biotic)
+Models predict patterns of population growth
+	exponential growth model
+		rate of pop increase under ideal conditions
+		calculated using G = rN
+			G - growth rate of pop
+			N - pop size
+			r - per capita rate of increase (birth-death rate)
+	logistic growth model
+Logitstic growth
+	when resources are limited
+Boom and bust cycles
