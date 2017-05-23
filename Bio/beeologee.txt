@@ -670,3 +670,6 @@ Speciation and geographic separation
 	sympatric speciation - small pop. becomes new species without geographic isolation
 Haploid gametes from two different species combine to produce a sterile hybrid
 	chromosomes are not homologous, cannot pair up
+	
+-=-=5/23/17=-=-
+Population and Community Ecology
