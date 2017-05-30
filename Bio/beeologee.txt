@@ -701,3 +701,44 @@ Models predict patterns of population growth
 Logitstic growth
 	when resources are limited
 Boom and bust cycles
+
+-=-=5/25/17=-=-
+Life history is shaped by evolution
+	r selection traits
+		short life
+		produce many offspring
+		smaller organisms
+		dont maintain a pop near carrying capacity
+		controlled by density-independent factors
+	k selection traits
+		long life
+		produce few offspring, better chance of living to a reproductive age
+		larger organisms
+		maintain a pop at or near carrying capacity
+		controlled by density dependent factors
+Population ecology - pop density
+	clumped
+	uniform
+	random
+Survivorship curve - plot of the proportion out of a cohort alive at each age
+Interspecific interactions - relationships with other species in the community
+Competition
+	ecological niche
+Resource partitioning
+	largely similar ecological niches partition resources = minimize competition
+	achieved by coevolution
+	
+-=-=5/30/17=-=-
+Ecological Sucession
+	primary sucession - natural
+	secondary sucession - farming (slash and burn)
+Nutrition cycles and ecosystems
+Biological magnification
+	if food contains certain types of toxic substances, they may be stored and become more concentrated
+	can lead to harmful and even fatal effects
+water, carbon, nitrogen, phosphate cycles
+symbiosis
+	most plants form symbioses with fungi called mycorrhizae
+		produce enzymes that release phosphorus
+nitrogen fixing bacteria
+acid rain

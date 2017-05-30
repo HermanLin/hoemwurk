@@ -12,9 +12,22 @@ void setup() {
 }
 
 void draw() {
+  if (upPressed) {
+    ship.vel = new PVector(7 * cos(ship.heading), 7 * sin(ship.heading));
+  } else {
+    ship.vel = new PVector(0, 0);
+  }
+
+  if (leftPressed) {
+    ship.rotate(-1 * PI / 16);
+  }
+  if (rightPressed) {
+    ship.rotate(PI / 32);
+  }
+  ship.move();
+  ship.edge();
   ship.render();
 }
-
 void keyPressed() {
   if (key == CODED) {
     if (keyCode == UP) {
