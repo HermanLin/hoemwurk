@@ -10,7 +10,7 @@ BST colliders;
 GameObject[] objs;
 
 void setup() {
-  size(1200, 800, P3D);
+  size(1000, 600, P3D);
   background(0);
   player = new Player();
   frameRate(24);

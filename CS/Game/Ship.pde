@@ -2,17 +2,15 @@ class Ship {
 
   PVector pos;
   PVector vel;
-  PVector acc;
   PShape model;
   float heading;
-  float slowDown = 0.9;
   float r = 10;
 
   Ship() {
     pos = new PVector(width/2, height/2);
     vel = new PVector (0, 0);
-    acc = new PVector (0, 0);
     heading = 3 * PI/2;
+    
     model = createShape();
     model.beginShape();
     model.noFill();
@@ -25,8 +23,8 @@ class Ship {
 
   void render() {
     translate(pos.x, pos.y);
-    background(0);
     shape(model);
+    translate(-pos.x,-pos.y);
   }
 
   void rotate(float angle) {
@@ -34,9 +32,6 @@ class Ship {
     model.rotate(angle);
   }
   void move() {
-    pos = pos.add(vel);
-  }
-  void edge() {
     if (pos.x < r) {
       pos.x = width - r;
     }
@@ -49,5 +44,7 @@ class Ship {
     if (pos.y > height - r) {
       pos.y = r;
     }
+    
+    pos = pos.add(vel);
   }
 }
